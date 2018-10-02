@@ -1,6 +1,9 @@
 import socket
 import argparse
 import threading
+import hashlib
+import time
+
 
 #Arguments for the server
 parser = argparse.ArgumentParser(description='TCP server')
@@ -24,7 +27,7 @@ server.bind((args.host,args.port))
 server.listen(5) 
 
 video = '************'.encode()
-hashVideo = str(hash(video)).encode()
+hashVideo = hashlib.sha256(video).hexdigest()
 separator = ';'.encode()
 numClients = 1
 clients = []
@@ -37,15 +40,20 @@ def handle_client_connection(client_socket):
         while(request != 'bye'.encode()):
             print('Received {}'.format(request))
             if request == b'SYN':
-                client_socket.send('SYNACK')
+                client_socket.send('SYNACK'.encode())
             if request == b'ACK':
                 # registro tiempo
                 client_socket.send(video)
                 client_socket.send(separator)
                 client_socket.send(hashVideo)
-            request = client_socket.recv(args.buffsize)
+                request = client_socket.recv(args.buffsize)
+                if request == b'OK':
+                    # paro de registrar tiempo
+                    client_socket.send('bye'.encode())
+                    request = client_socket.recv(args.buffsize)
     except Exception as err:
         client_socket.close()
+        print(err)
     client_socket.close()
 
 while True:

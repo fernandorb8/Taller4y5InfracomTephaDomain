@@ -2,7 +2,7 @@ import socket
 import argparse
 import threading
 
-#Arguments for the client
+#Arguments for the server
 parser = argparse.ArgumentParser(description='TCP server')
 
 parser.add_argument('--host', type=str, default='localhost',
@@ -24,7 +24,8 @@ server.bind((args.host,args.port))
 server.listen(5) 
 
 video = '************'.encode()
-hashVideo = hash(video)
+hashVideo = str(hash(video)).encode()
+separator = ';'.encode()
 numClients = 1
 clients = []
 
@@ -40,9 +41,10 @@ def handle_client_connection(client_socket):
             if request == b'ACK':
                 # registro tiempo
                 client_socket.send(video)
+                client_socket.send(separator)
                 client_socket.send(hashVideo)
             request = client_socket.recv(args.buffsize)
-    except err:
+    except Exception as err:
         client_socket.close()
     client_socket.close()
 

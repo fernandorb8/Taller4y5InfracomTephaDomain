@@ -35,15 +35,25 @@ args = parser.parse_args()
 # create an ipv4 (AF_INET) socket object using the tcp protocol (SOCK_STREAM)
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
+
 # connect the client
 # client.connect((target, port))
-client.connect((args.host, args.port))
-client.send('holi'.encode())
-
-# receive the response data (4096 is recommended buffer size)
-response = client.recv(args.buffsize)
-client.send('********'.encode())
-
-print(response)
-# close connection
-client.close()
+try:
+    #Initialization of handshake
+    client.connect((args.host, args.port))
+    client.send('SYN'.encode())
+    # receive the response data
+    response = client.recv(args.buffsize)
+    print(response)
+    if response == b'SYNACK':
+        client.send('ACK'.encode())
+        #Registro tiempo
+        video = client.recv(args.buffsize)
+        separator = client.recv(args.buffsize)
+        vhash = client.recv(args.buffsize)
+        print(video)
+        client.send('bye'.encode())
+    else:
+        client.send('bye'.encode())
+except Exception as err:
+    print(err)

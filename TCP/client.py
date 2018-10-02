@@ -30,6 +30,7 @@ fl = open(args.out, 'w')
 fl.write(time.strftime('%c'))
 fl.write('Listening on {}:{}'.format(args.host, args.port))
 fl.write('buffsize {}'.format(args.buffsize))
+fl.write('-----------------')
 
 # function that writes on the log file
 def log_event(time, message):
@@ -52,7 +53,6 @@ try:
         end = False
         while(not end):
             video = client.recv(args.buffsize)
-            separator = client.recv(args.buffsize)
             vhash = client.recv(args.buffsize)
             hashVideo = hashlib.sha256(video).hexdigest()
             print(video)

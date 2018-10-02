@@ -20,17 +20,40 @@ parser.add_argument('--buffsize', default=4096,
 parser.add_argument('--nclients', default=1,
                     help='number of clients the server will manage')
 
+parser.add_argument('--out', default='test_server_1.log',
+                    help='output file for the log')
+
 args = parser.parse_args()
 
+# Initialize the server
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((args.host,args.port))
 server.listen(5) 
 
+# Encoding and hashing of the videos that are going to be sent
+# TODO: Falta poner los dos videos.
 video = '************'.encode()
 hashVideo = hashlib.sha256(video).hexdigest()
-separator = ';'.encode()
-numClients = 1
+
+# Initialize the list of clients connected 
 clients = []
+
+# open log file
+fl = open(args.out, 'w')
+
+# header of file
+fl.write(time.strftime('%c'))
+fl.write('Listening on {}:{}'.format(args.host, args.port))
+fl.write('Buffsize {}'.format(args.buffsize))
+fl.write('Number of clients: {}'.format(args.nclients))
+fl.write('-----------------')
+
+# function that writes on the log file
+def log_event(time, message):
+    fl.write('execution time: {} s'.format(time))
+    fl.write(message)
+    fl.write('-----------------')
+
 
 print('Listening on {}:{}'.format(args.host, args.port))
 
@@ -42,13 +65,14 @@ def handle_client_connection(client_socket):
             if request == b'SYN':
                 client_socket.send('SYNACK'.encode())
             if request == b'ACK':
-                # registro tiempo
+                # Start time
+                start = time.time()
                 client_socket.send(video)
-                client_socket.send(separator)
                 client_socket.send(hashVideo)
                 request = client_socket.recv(args.buffsize)
                 if request == b'OK':
-                    # paro de registrar tiempo
+                    # Stop time
+                    log_event(time.time()-start, 'Video send successfully')
                     client_socket.send('bye'.encode())
                     request = client_socket.recv(args.buffsize)
     except Exception as err:

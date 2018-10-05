@@ -53,9 +53,10 @@ try:
         end = False
         while(not end):
             video = client.recv(args.buffsize)
+            print('Received {}'.format(video))
             vhash = client.recv(args.buffsize)
-            hashVideo = hashlib.sha256(video).hexdigest()
-            print(video)
+            print('Received {}'.format(vhash))
+            hashVideo = hashlib.sha256(video).hexdigest().encode()
             if vhash == hashVideo:
                 client.send('OK'.encode())
                 end = True

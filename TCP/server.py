@@ -17,10 +17,13 @@ parser.add_argument('--port', default=9000,
 parser.add_argument('--buffsize', default=4096,
                     help='size of buffer for the server')
 
-parser.add_argument('--nclients', default=1,
+parser.add_argument('--nclients', type=int, default=1,
                     help='number of clients the server will manage')
 
 parser.add_argument('--out', default='test_server_1.log',
+                    help='output file for the log')
+
+parser.add_argument('--size', default=8*1024,
                     help='output file for the log')
 
 args = parser.parse_args()
@@ -33,7 +36,7 @@ server.listen(5)
 # Encoding and hashing of the videos that are going to be sent
 # TODO: Falta poner los dos videos.
 video = '************'.encode()
-hashVideo = hashlib.sha256(video).hexdigest()
+hashVideo = hashlib.sha256(video).hexdigest().encode()
 
 # Initialize the list of clients connected 
 clients = []
@@ -50,9 +53,9 @@ fl.write('-----------------')
 
 # function that writes on the log file
 def log_event(time, message):
-    fl.write('execution time: {} s'.format(time))
-    fl.write(message)
-    fl.write('-----------------')
+    fl.write('execution time: {} s \n'.format(time))
+    fl.write('{} \n'.format(message))
+    fl.write('----------------- \n')
 
 
 print('Listening on {}:{}'.format(args.host, args.port))
@@ -60,21 +63,31 @@ print('Listening on {}:{}'.format(args.host, args.port))
 def handle_client_connection(client_socket):
     try:
         request = client_socket.recv(args.buffsize)
-        while(request != 'bye'.encode()):
+        end = False
+        while(not end):
             print('Received {}'.format(request))
-            if request == b'SYN':
+            if request == b'bye':
+                end = True
+            elif request == b'SYN':
                 client_socket.send('SYNACK'.encode())
-            if request == b'ACK':
+            elif request == b'ACK':
                 # Start time
                 start = time.time()
+                log_event(start, 'Start sending video')
+                print('Sending video ...')
                 client_socket.send(video)
+                print('Sending hash ...')
                 client_socket.send(hashVideo)
-                request = client_socket.recv(args.buffsize)
                 if request == b'OK':
                     # Stop time
                     log_event(time.time()-start, 'Video send successfully')
                     client_socket.send('bye'.encode())
-                    request = client_socket.recv(args.buffsize)
+            elif request == b'OK':
+                # Stop time
+                log_event(time.time()-start, 'Video send successfully')
+                client_socket.send('bye'.encode())
+                end = True
+            request = client_socket.recv(args.buffsize)
     except Exception as err:
         client_socket.close()
         print(err)
@@ -85,6 +98,7 @@ while True:
     print('Accepted connection from {}:{}'.format(address[0], address[1]))
     clients.append(client_sock)
     if args.nclients == len(clients):
+        print('Starting threads ...')
         for client_sock in clients:
             client_handler = threading.Thread(
                 target=handle_client_connection,

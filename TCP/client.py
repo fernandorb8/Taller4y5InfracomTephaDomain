@@ -39,78 +39,79 @@ def log_event(time, message):
     fl.write('message: {} \n'.format(message))
     fl.write('----------------- \n')
 
-async def receive(act, client, start, chunks, lenMess, i):
+def receive(act, client, start, chunks, lenMess, i):
     hashact = client.recv(args.buffsize)
     myhash = hashlib.sha256(act).hexdigest().encode()
+    print(act)
     if hashact == myhash:
         print('++++++')
         chunks[i] = act
     else:
         log_event(time.time()-start, 'Message lost')
     print((i/lenMess)*100)
-    print(act)
 
-async def main():
-    # connect the client
-    try:
-        #Initialization of handshake
-        client.connect((args.host, args.port))
-        client.send('SYN'.encode())
-        # receive the response data
+# async def main():
+# connect the client
+try:
+    #Initialization of handshake
+    client.connect((args.host, args.port))
+    client.send('SYN'.encode())
+    # receive the response data
+    response = client.recv(args.buffsize)
+    print(response)
+    if response == b'SYNACK':
+        client.send('ACK'.encode())
+        #Start time
+        start = time.time()
+        end = False
+        while(not end):
+            # video = client.recv(args.buffsize)
+            lenMess = int(client.recv(args.buffsize).decode())
+            print('Received {}'.format(lenMess))
+            chunks = ['']*lenMess
+            full = False
+            i = 0
+            while(not full):
+                act = client.recv(args.buffsize)
+                if(act == b'END'):
+                    print('Entreeeeeee')
+                    full = True
+                    break
+                else: 
+                    # receive(act, client, start, chunks, lenMess, i)
+                    hashact = client.recv(args.buffsize)
+                    myhash = hashlib.sha256(act).hexdigest().encode()
+                    if hashact == myhash:
+                        print('++++++')
+                        chunks[i] = act
+                    else:
+                        log_event(time.time(), 'Message lost')
+                    print((i/lenMess)*100)
+                    i += 1
+                    print('Received {}'.format(act))
+                    print('Received {}'.format(hashact))
+            # vhash = client.recv(args.buffsize)
+            # print('Received {}'.format(vhash))
+            # hashVideo = hashlib.sha256(video).hexdigest().encode()
+            if lenMess == lenMess:
+                client.send('OK'.encode())
+                end = True
+                # Stop and print
+                log_event(time.time()-start, 'Video received successfully')
+            else:
+                client.send('ACK'.encode())
+                # Restart time and log problem
+                prev = start
+                start = time.time()
+                log_event(start-prev, 'Problem receiving the video, sending again...')
         response = client.recv(args.buffsize)
         print(response)
-        if response == b'SYNACK':
-            client.send('ACK'.encode())
-            #Start time
-            start = time.time()
-            end = False
-            while(not end):
-                # video = client.recv(args.buffsize)
-                lenMess = int(client.recv(args.buffsize).decode())
-                print('Received {}'.format(lenMess))
-                chunks = ['']*lenMess
-                full = False
-                i = 0
-                while(not full):
-                    act = client.recv(args.buffsize)
-                    if(act == b'END'):
-                        print('Entreeeeeee')
-                        full = True
-                        break
-                    else: 
-                        await receive(act, client, start, chunks, lenMess, i)
-                        # hashact = client.recv(args.buffsize)
-                        # myhash = hashlib.sha256(act).hexdigest().encode()
-                        # if hashact == myhash:
-                        #     print('++++++')
-                        #     chunks[i] = act
-                        # else:
-                        #     log_event(time.time(), 'Message lost')
-                        # print((i/lenMess)*100)
-                        i += 1
-                        # print(act)
-                # vhash = client.recv(args.buffsize)
-                # print('Received {}'.format(vhash))
-                # hashVideo = hashlib.sha256(video).hexdigest().encode()
-                if lenMess == lenMess:
-                    client.send('OK'.encode())
-                    end = True
-                    # Stop and print
-                    log_event(time.time()-start, 'Video received successfully')
-                else:
-                    client.send('ACK'.encode())
-                    # Restart time and log problem
-                    prev = start
-                    start = time.time()
-                    log_event(start-prev, 'Problem receiving the video, sending again...')
-            response = client.recv(args.buffsize)
-            print(response)
-            client.send('bye'.encode())
-        else:
-            client.send('bye'.encode())
-    except Exception as err:
-        print(err)
+        client.send('bye'.encode())
+    else:
+        client.send('bye'.encode())
+except Exception as err:
+    print(err)
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
-loop.close()
+# loop = asyncio.get_event_loop()
+# loop.run_until_complete(main())
+# loop.close()

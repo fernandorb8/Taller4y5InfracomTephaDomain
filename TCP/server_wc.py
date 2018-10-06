@@ -23,10 +23,10 @@ parser.add_argument('--nclients', type=int, default=1,
 parser.add_argument('--out', default='test_server_1.log',
                     help='output file for the log')
 
-parser.add_argument('--size', type= float, default=8*1024,
-                    help='chunk size used for sending the complete message')
+parser.add_argument('--size', default=8*1024,
+                    help='output file for the log')
 
-parser.add_argument('--file', default='./../files/test',
+parser.add_argument('--file', default='./../files/myfile_250',
                     help='file to transfer to the clients')
 
 args = parser.parse_args()
@@ -44,14 +44,21 @@ hashVideo = hashlib.sha256(video).hexdigest().encode()
 # Initialize the list of clients connected 
 clients = []
 
+fileContents = []
+with open(args.file, 'rb') as f:
+    fileContents = f.read()
+
+video = fileContents
+hashVideo = hashlib.sha256(video).hexdigest().encode()
+
 # open log file
 fl = open(args.out, 'w')
 
 # header of file
-fl.write(time.strftime('%c') + '\n')
-fl.write('Listening on {}:{} \n'.format(args.host, args.port))
-fl.write('Buffsize {} \n'.format(args.buffsize))
-fl.write('Number of clients: {} \n'.format(args.nclients))
+fl.write(time.strftime('%c'))
+fl.write('Listening on {}:{}\n'.format(args.host, args.port))
+fl.write('Buffsize {}\n'.format(args.buffsize))
+fl.write('Number of clients: {}\n'.format(args.nclients))
 fl.write('-----------------\n')
 
 # function that writes on the log file
@@ -60,30 +67,6 @@ def log_event(time, message):
     fl.write('{} \n'.format(message))
     fl.write('----------------- \n')
 
-
-def send_video(client_socket, start):
-    lines = []
-    # Open file and start reading in bytes
-    with open(args.file, 'rb') as f:
-        lines = [x.strip() for x in f.readlines()]
-    
-    #Send number of lines of the file
-    print('Sending {} lines ...'.format(len(lines)))
-    client_socket.send(str(len(lines)).encode())
-    i = 1
-    for line in lines:
-        client_socket.send(line)
-        print('Sending {}'.format(line))
-        client_socket.send(hashlib.sha256(line).hexdigest().encode())
-        print((i/len(lines))*100)
-        i += 1
-    print('finish!')
-    while(client_socket.recv(args.buffsize) != b'OK'):
-        client_socket.send('END'.encode())
-    # Stop time
-    print('Received the OK')
-    log_event(time.time()-start, 'Video send successfully')
-    client_socket.send('bye'.encode())
 
 print('Listening on {}:{}'.format(args.host, args.port))
 
@@ -101,11 +84,14 @@ def handle_client_connection(client_socket):
                 # Start time
                 start = time.time()
                 log_event(start, 'Start sending video')
-                send_video(client_socket, start)
-                # if request == b'OK':
-                #     # Stop time
-                #     log_event(time.time()-start, 'Video send successfully')
-                #     client_socket.send('bye'.encode())
+                print('Sending video ...')
+                client_socket.send(video)
+                print('Sending hash ...')
+                client_socket.send(hashVideo)
+                if request == b'OK':
+                    # Stop time
+                    log_event(time.time()-start, 'Video send successfully')
+                    client_socket.send('bye'.encode())
             elif request == b'OK':
                 # Stop time
                 log_event(time.time()-start, 'Video send successfully')

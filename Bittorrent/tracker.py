@@ -96,37 +96,37 @@ def make_peer_list(peer_list):
     return peers
 
 class RequestHandler(BaseHTTPRequestHandler):
-    def do_GET(s):
+    def do_GET(self):
         """ Take a request, do some some database work, return a peer
         list response. """
 
         # Decode the request
-        package = decode_request(s.path)
+        package = decode_request(self.path)
 
         if not package:
-            s.send_error(403)
+            self.send_error(403)
             return
 
         # Get the necessary info out of the request
         info_hash = package["info_hash"][0]
-        ip = s.client_address[0]
+        ip = self.client_address[0]
         port = package["port"][0]
         peer_id = package["peer_id"][0]
         event = package["event"][0]
 
-        add_peer(s.server.torrents, info_hash, peer_id, ip, port, event)
+        add_peer(self.server.torrents, info_hash, peer_id, ip, port, event)
 
         # Generate a response
         response = {}
-        response["interval"] = s.server.interval
+        response["interval"] = self.server.interval
         response["peers"] = make_peer_list( \
-        s.server.torrents[info_hash])
+        self.server.torrents[info_hash])
 
         # Send off the response
-        s.send_response(200)
-        s.end_headers()
-        #s.wfile.write(str(response).encode())
-        s.wfile.write(Encoder(response).encode())
+        self.send_response(200)
+        self.end_headers()
+        #self.wfile.write(str(response).encode())
+        self.wfile.write(Encoder(response).encode())
 
 
     def log_message(self, format, *args):

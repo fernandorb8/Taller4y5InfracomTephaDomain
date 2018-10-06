@@ -69,68 +69,6 @@ CLIENT_NAME = b"pytorrent"
 CLIENT_ID = b"PY"
 CLIENT_VERSION = args.cliversion.encode()
 
-def make_info_dict(file):
-    """ Returns the info dictionary for a torrent file. """
-
-    with open(file,"rb") as f:
-        contents = f.read()
-
-    piece_length = 2**20    # TODO: This should change dependent on file size
-
-    info = {}
-
-    info["piece length"] = piece_length
-    info["length"] = len(contents)
-    info["name"] = file
-    info["md5sum"] = md5(contents).hexdigest()
-
-    # Generate the pieces
-    pieces = slice(contents, piece_length)
-    pieces = [ sha1(p).hexdigest() for p in pieces ]
-    info["pieces"] = collapse(pieces)
-    return info
-
-def make_torrent_file(file = None, tracker = None, comment = None):
-    """ Returns the bencoded contents of a torrent file. """
-
-    if not file:
-        raise TypeError("make_torrent_file requires at least one file, non given.")
-    if not tracker:
-        raise TypeError("make_torrent_file requires at least one tracker, non given.")
-
-    torrent = {}
-
-    # We only have one tracker, so that's the announce
-    if type(tracker) != list:
-        torrent["announce"] = tracker
-    # Multiple trackers, first is announce, and all go in announce-list
-    elif type(tracker) == list:
-        torrent["announce"] = tracker[0]
-        # And for some reason, each needs its own list
-        torrent["announce-list"] = [[t] for t in tracker]
-
-    torrent["creation date"] = int(time())
-    torrent["created by"] = CLIENT_NAME
-    if comment:
-        torrent["comment"] = comment
-
-    torrent["info"] = make_info_dict(file)
-
-    return Encoder(torrent).encode()
-
-def write_torrent_file(torrent = None, file = None, tracker = None, \
-    comment = None):
-    """ Largely the same as make_torrent_file(), except write the file
-    to the file named in torrent. """
-
-    if not torrent:
-        raise TypeError("write_torrent_file() requires a torrent filename to write to.")
-
-    data = make_torrent_file(file = file, tracker = tracker, \
-        comment = comment)
-    with open(torrent, "wb") as torrent_file:
-        torrent_file.write(data)
-
 def read_torrent_file(torrent_file):
     """ Given a .torrent file, returns its decoded contents. """
 
@@ -179,18 +117,6 @@ def generate_handshake(info_hash: bytes, peer_id: bytes) -> bytes:
     reserved = b"00000000"
 
     return len_id + protocol_id + reserved + info_hash + peer_id
-
-def send_recv_handshake(handshake, host, port):
-    """ Sends a handshake, returns the data we get back. """
-
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect((host, port))
-    s.send(handshake)
-
-    data = s.recv(len(handshake))
-    s.close()
-
-    return data
 
 class Torrent():
     def __init__(self, torrent_file):

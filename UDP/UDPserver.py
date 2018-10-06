@@ -91,12 +91,12 @@ def handle_client_connection(client_address,i):
                 print('fin archivo')
                 for i in range(int('500')):
                     handle_socket.send('END-FILE'.encode('UTF-8'))
-
-                print(str(i)+' packets send')
-                request = handle_socket.recv(args.buffsize)
-                print('HASTA AQUI')
-                print(request)
-                log_event(time.time()-start,'send-state: '+ request.decode('UTF-8'))
+                packets=False
+                
+            print(str(i)+' packets send')
+            request = handle_socket.recv(args.buffsize)
+            print(request)
+            log_event(time.time()-start,'send-state: '+ request.decode('UTF-8'))
 
     except Exception as err:
         print(err)

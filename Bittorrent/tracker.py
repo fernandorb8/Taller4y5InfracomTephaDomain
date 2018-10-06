@@ -213,7 +213,7 @@ class Tracker():
         self.stop()
         self.httpd.server_close()
 
-tracker: Tracker = Tracker()
+tracker = Tracker()
 
 def stop_exec(signum, frame):
     print("Quesito")

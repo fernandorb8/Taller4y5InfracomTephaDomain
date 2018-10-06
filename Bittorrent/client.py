@@ -139,7 +139,7 @@ class Torrent():
 
         self.data = read_torrent_file(torrent_file)
 
-        self.info_hash: bytes = sha1(Encoder(self.data[b"info"]).encode()).digest()
+        self.info_hash = sha1(Encoder(self.data[b"info"]).encode()).digest()
         self.peer_id = generate_peer_id()
         self.handshake = generate_handshake(self.info_hash, self.peer_id)
 
@@ -352,7 +352,7 @@ class PieceState(Enum):
     PENDING = 2
     HAVE = 3
 
-client: Torrent = Torrent(args.file)
+client = Torrent(args.file)
 
 def stop_exec():
     client.stop()

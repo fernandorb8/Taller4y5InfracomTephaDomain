@@ -3,7 +3,6 @@ import argparse
 import threading
 import hashlib
 import time
-import asyncio
 
 
 #Arguments for the server
@@ -27,7 +26,7 @@ parser.add_argument('--out', default='test_server_1.log',
 parser.add_argument('--size', type= float, default=8*1024,
                     help='chunk size used for sending the complete message')
 
-parser.add_argument('--file', default='./../files/myfile_250',
+parser.add_argument('--file', default='./../files/test',
                     help='file to transfer to the clients')
 
 args = parser.parse_args()
@@ -49,11 +48,11 @@ clients = []
 fl = open(args.out, 'w')
 
 # header of file
-fl.write(time.strftime('%c'))
-fl.write('Listening on {}:{}'.format(args.host, args.port))
-fl.write('Buffsize {}'.format(args.buffsize))
-fl.write('Number of clients: {}'.format(args.nclients))
-fl.write('-----------------')
+fl.write(time.strftime('%c') + '\n')
+fl.write('Listening on {}:{} \n'.format(args.host, args.port))
+fl.write('Buffsize {} \n'.format(args.buffsize))
+fl.write('Number of clients: {} \n'.format(args.nclients))
+fl.write('-----------------\n')
 
 # function that writes on the log file
 def log_event(time, message):
@@ -74,12 +73,12 @@ def send_video(client_socket, start):
     i = 1
     for line in lines:
         client_socket.send(line)
+        print('Sending {}'.format(line))
         client_socket.send(hashlib.sha256(line).hexdigest().encode())
         print((i/len(lines))*100)
         i += 1
-        print(line)
     print('finish!')
-    while(client_socket.recv(args.buffsize) == 'OK'):
+    while(client_socket.recv(args.buffsize) != b'OK'):
         client_socket.send('END'.encode())
     # Stop time
     print('Received the OK')

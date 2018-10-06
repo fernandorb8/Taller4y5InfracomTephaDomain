@@ -10,15 +10,12 @@
 from hashlib import md5, sha1
 from random import choice
 import socket
-from struct import pack, unpack
 from threading import Thread, Lock
-from time import sleep, time
-import types
+from time import sleep, time, strftime
 from urllib.parse import urlencode
 from urllib.request import urlopen
 from util import collapse, slice
 import argparse
-import time
 import signal
 from enum import Enum
 import math
@@ -52,7 +49,7 @@ args = parser.parse_args()
 #Open the log file
 with open(args.out, 'w') as fl:
     # header of file
-    fl.write(time.strftime('%c') + "\n")
+    fl.write(strftime('%c') + "\n")
     fl.write('Listening on {}:{}'.format(args.host, args.port) + "\n")
     fl.write('-'*17 + "\n")
 
@@ -210,6 +207,8 @@ class Torrent():
         self.piece_length = int(self.data[b"info"][b"piece length"])
         self.num_torrent_pieces = math.ceil(int(self.data[b"info"][b"length"])/self.piece_length)
         self.torrent_pieces = [PieceInfo() for i in range(self.num_torrent_pieces)]
+        
+        self.torrent_donwloaded = False
 
         # Has file and is going to share
         if args.seed:
@@ -220,7 +219,12 @@ class Torrent():
             pieces = slice(contents, int(self.data[b"info"][b"piece length"]))
             for i in range(self.num_torrent_pieces):
                 self.torrent_pieces[i].bytes = pieces[i]
+                pieces[i] = b''
                 self.torrent_pieces[i].state = PieceState.HAVE
+            del pieces
+            
+            # All pieces have been downloaded.
+            self.torrent_donwloaded = True
 
     def perform_tracker_request(self, url, info_hash, peer_id, port):
         """ Make a tracker request to url, every interval seconds, using
@@ -240,7 +244,7 @@ class Torrent():
         prsocket.listen(25)
         while self.running:
             client_sock, address = prsocket.accept()
-            log_event(time.time(),'Accepted connection from {}:{}'.format(address[0], address[1]))
+            log_event(time(),'Accepted connection from {}:{}'.format(address[0], address[1]))
             client_handler = Thread(
                 target=self.handle_peer_connection,
                 args=(client_sock,)  # without comma you'd get a... TypeError: handle_client_connection() argument after * must be a sequence, not _socketobject
@@ -287,24 +291,79 @@ class Torrent():
             client_socket.close()
 
     def get_torrent_file(self):
-        """ Get the torrent file using the torrent info. """
-        tracker_response = make_tracker_request(self.info_hash, args.port, self.peer_id, self.data[b"announce"].decode(),"started")
-        peers = tracker_response[b"peers"]
-        peers = decode_expanded_peers(peers)
-        for val, piece in enumerate(self.torrent_pieces):
-            if piece.state == PieceState.DONT_HAVE:
-                self.get_piece_from_random_peer(piece, val, peers)
-
-    def get_piece_from_random_peer(self, piece, val: int, peers: list):
-        for peer in peers:
-            if peer[2] != self.peer_id:
-                peer_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                peer_sock.connect((peer[0], peer[1]))
-                peer_sock.send(generate_handshake(self.info_hash, self.peer_id))
-                response = peer_sock.recv(4086)
-                peer_sock.send(b'6' + val.to_bytes(4, byteorder="big"))
-                response = peer_sock.recv(self.piece_length + 4086)
-                print(response)
+        """ Get the file in the torrent using the torrent info. """
+        while not self.torrent_donwloaded:            
+        
+            tracker_response = make_tracker_request(self.info_hash, args.port, \
+                                                    self.peer_id, self.data[b"announce"].decode(),"started")
+            peers = tracker_response[b"peers"]
+            peers = decode_expanded_peers(peers)
+            self.active_peers = {}
+            
+            for peer in peers:
+                if peer[2] != self.peer_id:
+                    if peer[2] not in self.active_peers:
+                    
+                        # Handshake
+                        peer_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                        peer_sock.connect((peer[0], peer[1]))
+                        peer_sock.send(generate_handshake(self.info_hash, self.peer_id))
+                        response = peer_sock.recv(4086) # TO-DO check hash
+                        
+                        self.active_peers[peer[2]] = Thread(target = self.get_pieces_from_peer, \
+                                                            args = (peer_sock,))
+                        self.active_peers[peer[2]].start()
+            
+            for key in self.active_peers:
+                self.active_peers[key].join()
+                
+        with open(self.peer_id.decode() + self.data[b"info"][b"name"].decode(), "wb") as f:
+            for piece in self.torrent_pieces:
+                f.write(piece.bytes)
+                
+    def get_pieces_from_peer(self, peer_sock: socket.socket):
+        """ Get all possible pieces from peer. """
+        try:
+            while not self.torrent_donwloaded:                
+                for val, piece in enumerate(self.torrent_pieces):
+                    if piece.state == PieceState.DONT_HAVE:
+                        piece.state = PieceState.PENDING
+                        peer_sock.send(b'6' + val.to_bytes(4, byteorder="big"))
+                        
+                        response = peer_sock.recv(self.piece_length + 4086)
+                        if response[:1] == b'0': #choke
+                            pass
+                        elif response[:1] == b'1': #unchoke
+                            pass                    
+                        elif response[:1] == b'2': #interested
+                            pass
+                        elif response[:1] == b'3': #not interested
+                            piece.state = PieceState.DONT_HAVE
+                        elif response[:1] == b'4': #have
+                            pass
+                        elif response[:1] == b'5': #bitfield
+                            pass
+                        elif response[:1] == b'6': #request
+                            pass
+                        elif response[:1] == b'7': #piece
+                            piece.bytes = response[1:]
+                            piece.state = PieceState.HAVE
+                        elif response[:1] == b'8': #cancel
+                            pass
+                        
+                        self.torrent_donwloaded = self.is_torrent_downloaded()
+        except Exception as err:
+            print(err)
+        finally:
+            peer_sock.close()
+            
+    def is_torrent_downloaded(self) -> bool:
+        """ Returns a bool indicating if download has been completed. """
+        is_downloaded = True
+        for piece in self.torrent_pieces:
+            is_downloaded = is_downloaded and piece.state == PieceState.HAVE
+        return is_downloaded
+        
                             
     def run(self):
         """ Start the torrent running. """

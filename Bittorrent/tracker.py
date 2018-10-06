@@ -17,6 +17,7 @@ from urllib.parse import parse_qs
 import time
 import argparse
 import signal
+import sys
 
 from bencode import Encoder
 
@@ -201,8 +202,10 @@ class Tracker():
 
 tracker: Tracker = Tracker()
 
-def stop_exec():
+def stop_exec(signum, frame):
+    print("Quesito")
     del tracker
+    sys.exit()
 
 signal.signal(signal.SIGINT, stop_exec)
 

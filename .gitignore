@@ -6,4 +6,11 @@ bin
 target
 
 #Python
-.pyc
+*.pyc
+
+*.log
+
+#Large files
+
+files
+

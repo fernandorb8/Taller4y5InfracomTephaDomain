@@ -28,7 +28,7 @@ from bencode import Decoder, Encoder
 #Arguments for the tracker
 parser = argparse.ArgumentParser(description='Bittorrent client')
 
-parser.add_argument('--file', type=str, default="test.torrent",
+parser.add_argument('--torrent', type=str, default="test.torrent",
                     help='torrent file')
 
 parser.add_argument('--host', type=str, default="localhost",
@@ -354,7 +354,7 @@ class PieceState(Enum):
     PENDING = 2
     HAVE = 3
 
-client = Torrent(args.file)
+client = Torrent(args.torrent)
 
 def stop_exec():
     client.stop()

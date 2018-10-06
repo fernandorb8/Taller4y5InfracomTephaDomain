@@ -216,7 +216,6 @@ class Tracker():
 tracker = Tracker()
 
 def stop_exec(signum, frame):
-    print("Quesito")
     del tracker
     sys.exit()
 

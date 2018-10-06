@@ -356,7 +356,7 @@ class PieceState(Enum):
 
 client = Torrent(args.torrent)
 
-def stop_exec():
+def stop_exec(signum, frame):
     client.stop()
     del client
     sys.exit()

@@ -3,6 +3,8 @@ import argparse
 import threading
 import hashlib
 import time
+import os
+import os.path as osp
 
 
 #Arguments for the server
@@ -51,8 +53,15 @@ with open(args.file, 'rb') as f:
 video = fileContents
 hashVideo = hashlib.sha256(video).hexdigest().encode()
 
+# create directory for log
+out_dir = 'Clients_{}_file_{}'.format(args.nclients, args.file) 
+if osp.exists(out_dir):
+    os.system('rm -rf ' + out_dir)
+
+os.mkdir(out_dir)
+
 # open log file
-fl = open(args.out, 'w')
+fl = open(out_dir+'/'+args.out, 'w')
 
 # header of file
 fl.write(time.strftime('%c'))

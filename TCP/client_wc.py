@@ -2,6 +2,8 @@ import socket
 import argparse
 import hashlib
 import time
+import os
+import os.path as osp
 
 #Arguments for the client
 parser = argparse.ArgumentParser(description='TCP client')
@@ -23,8 +25,15 @@ args = parser.parse_args()
 # create an ipv4 (AF_INET) socket object using the tcp protocol (SOCK_STREAM)
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
+# create directory for log
+out_dir = 'Clients_{}_file_{}'.format(args.nclients, args.file) 
+if osp.exists(out_dir):
+    os.system('rm -rf ' + out_dir)
+
+os.mkdir(out_dir)
+
 # open log file
-fl = open(args.out, 'w')
+fl = open(out_dir+'/'+args.out, 'w')
 
 # header of file
 fl.write(time.strftime('%c'))

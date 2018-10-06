@@ -9,7 +9,7 @@ parser.add_argument('--host', type=str, default='localhost',
 parser.add_argument('--port', default=9000,
                     help='port of the server to connect')
 
-parser.add_argument('--buffsize', default=16384,
+parser.add_argument('--buffsize', default=65536,
                     help='size of buffer for the client')
 
 parser.add_argument('--out', default='test_client_1.log',
@@ -42,27 +42,28 @@ try:
     client.connect(address)
     client.send('ready-to-receive'.encode())
     print('ready-to-receive')
-    chunks= int(client.recv(args.buffsize).decode('UTF-8'))
-    print(chunks)
-    datahash = client.recv(args.buffsize).decode('UTF-8')
+    chunks= int(client.recv(args.buffsize).decode('ISO-8859-1'))
+    datahash = client.recv(args.buffsize).decode('ISO-8859-1')
     start = time.time()
     packets=True
     data = ''
     i=0
     while packets:
         request=client.recv(args.buffsize)
-        if 'END-FILE' not in request.decode('UTF-8'):
+        if 'END-FILE' not in request.decode('ISO-8859-1'):
             i+=1
-            data+= request.decode('UTF-8')
+            data+= request.decode('ISO-8859-1')
+            print('receiving data...'+str(i))
         else:
             packets=False
-            i=i+1
-            print('FIN MENSAJEEEEE')
+            for x in range(10):
+                print('END-MESSAGE')
 
-    print('sale')
+
+    print(str(i)+' packets recieved')
 
     new_file= open('new_file.txt','wb')
-    new_file.write(data.encode('UTF-8'))
+    new_file.write(data.encode('ISO-8859-1'))
     new_file.flush()
 
     sha1 = hashlib.sha1()
@@ -74,13 +75,12 @@ try:
             sha1.update(data)
 
     hashData = sha1.hexdigest()
-    print(hashData)
 
     if datahash == hashData:
-        client.send('ok'.encode('UTF-8'))
-        log_event(time.time()-start,'send_state: ok, recieved succesfully')
+        client.send('ok'.encode('ISO-8859-1'))
+        log_event(time.time()-start,'send_state: ok, recieved succesfully. packets send= '+ str(chunks) + ' . packets received= '+ str(i))
     else:
-        client.send('error'.encode('UTF-8'))
-        log_event(time.time()-start,'send_state: error, Problems receiving the data')
+        client.send('error'.encode('ISO-8859-1'))
+        log_event(time.time()-start,'send_state: error, Problems receiving the data. packets send= '+ str(chunks) + ' . packets received= '+ str(i))
 except Exception as err:
     print(err)

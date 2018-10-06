@@ -1,4 +1,4 @@
-import socket , argparse, threading , hashlib , time, io
+import socket , argparse, threading , hashlib , time, io, asyncio
 
 #arguments
 parser = argparse.ArgumentParser(description='UDP server')
@@ -7,13 +7,13 @@ parser.add_argument('--host', type=str, default='localhost', help='hostname of t
 
 parser.add_argument('--port', default=9000 , help='port of the server to connect')
 
-parser.add_argument('--buffsize', default=11760, help='size of buffer for the server')
+parser.add_argument('--buffsize', default=60416, help='size of buffer for the server')
 
 parser.add_argument('--nclients', default=1, help='number of clients the server will manage')
 
 parser.add_argument('--out', default='test_udpserver_1.log', help='output file for the log')
 
-parser.add_argument('--file', default='data.txt', help='file to be send')
+parser.add_argument('--file', default='data1.txt', help='file to be send')
 
 args = parser.parse_args()
 
@@ -32,11 +32,10 @@ with open(args.file, 'rb') as f:
         sha1.update(data)
 
 hashData = sha1.hexdigest()
-print(hashData)
 #---------------------------
 
 fileChunks =[]
-with io.open(args.file,'r',encoding='UTF-8') as f:
+with io.open(args.file,'r',encoding='ISO-8859-1') as f:
     l = f.read(args.buffsize)
     while (l):
         fileChunks.append(l)
@@ -77,26 +76,27 @@ def handle_client_connection(client_address,i):
         handle_socket.send('connected'.encode())
         response = handle_socket.recv(args.buffsize)
         if response == 'ready-to-receive'.encode():
-            handle_socket.send(str(len(fileChunks)).encode('UTF-8'))
-            handle_socket.send(hashData.encode('utf-8'))
+            handle_socket.send(str(len(fileChunks)).encode('ISO-8859-1'))
+            handle_socket.send(hashData.encode('ISO-8859-1'))
 
             i=0
             packets = True
             while packets:
                 start = time.time()
                 for chunk in fileChunks:
-                    handle_socket.send(chunk.encode('UTF-8'))
+                    handle_socket.send(chunk.encode('ISO-8859-1'))
+                    time.sleep(0.22)
+                    print('sending data...')
                     i+=1
-
-                print('fin archivo')
-                for i in range(int('500')):
-                    handle_socket.send('END-FILE'.encode('UTF-8'))
                 packets=False
-                
+                print('fin archivo')
+            for j in range(int('500')):
+                handle_socket.send('END-FILE'.encode('ISO-8859-1'))
+
             print(str(i)+' packets send')
             request = handle_socket.recv(args.buffsize)
             print(request)
-            log_event(time.time()-start,'send-state: '+ request.decode('UTF-8'))
+            log_event(time.time()-start,'send-state: '+ request.decode('ISO-8859-1'))
 
     except Exception as err:
         print(err)

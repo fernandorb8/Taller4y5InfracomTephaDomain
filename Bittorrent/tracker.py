@@ -18,6 +18,8 @@ import time
 import argparse
 import signal
 import sys
+import os
+import errno
 
 from bencode import Encoder
 
@@ -33,10 +35,21 @@ parser.add_argument('--port',
 parser.add_argument('--out', default='test_tracker_1.log',
                     help='output file for the log')
 
+parser.add_argument('--out_folder', default='test', type=str,
+                    help='output file name for the log')
+
 args = parser.parse_args()
 
+#Make iteration folders
+if not os.path.exists(args.out_folder + "/"):
+    try:
+        os.makedirs(args.out_folder + "/")
+    except OSError as exc: # Guard against race condition
+        if exc.errno != errno.EEXIST:
+            raise
+
 #Open the log file
-with open(args.out, 'w') as fl:
+with open(args.out_folder + "/" + args.out, 'w') as fl:
     # header of file
     fl.write(time.strftime('%c') + "\n")
     fl.write('Listening on {}:{}'.format(args.host, args.port) + "\n")
@@ -44,7 +57,7 @@ with open(args.out, 'w') as fl:
 
 def log_event(time, message):
     """ Function that writes on the log file """
-    with open(args.out, 'a') as fl:
+    with open(args.out_folder + "/" + args.out, 'a') as fl:
         fl.write('execution time: {} s'.format(time) + "\n")
         fl.write(message + "\n")
         fl.write('-'*17 + "\n")

@@ -20,6 +20,8 @@ import signal
 from enum import Enum
 import math
 import sys
+import os
+import errno
 
 from bencode import Decoder, Encoder
 
@@ -36,7 +38,10 @@ parser.add_argument('--port', default=6881, type=int,
                     help='port of the client')
 
 parser.add_argument('--out', default='test_client_1.log', type=str,
-                    help='output file for the log')
+                    help='output file name for the log')
+
+parser.add_argument('--out_folder', default='test', type=str,
+                    help='output file name for the log')
 
 parser.add_argument('--seed', help='flag to indicate if client is seed',
                     action="store_true")
@@ -46,8 +51,16 @@ parser.add_argument('--cliversion', help='four digit version',
 
 args = parser.parse_args()
 
+#Make iteration folders
+if not os.path.exists(args.out_folder + "/"):
+    try:
+        os.makedirs(args.out_folder + "/")
+    except OSError as exc: # Guard against race condition
+        if exc.errno != errno.EEXIST:
+            raise
+
 #Open the log file
-with open(args.out, 'w') as fl:
+with open(args.out_folder + "/" + args.out, 'w') as fl:
     # header of file
     fl.write(strftime('%c') + "\n")
     fl.write('Listening on {}:{}'.format(args.host, args.port) + "\n")
@@ -56,7 +69,7 @@ with open(args.out, 'w') as fl:
 def log_event(time, message):
     """ Function that writes on the log file """
     lock.acquire()
-    with open(args.out, 'a') as fl:
+    with open(args.out_folder + "/" + args.out, 'a') as fl:
         fl.write('execution time: {} s'.format(time) + "\n")
         fl.write(message + "\n")
         fl.write('-'*17 + "\n")
@@ -151,6 +164,9 @@ class Torrent():
             
             # All pieces have been downloaded.
             self.torrent_donwloaded = True
+            
+            # Log served file. Size is in file name.
+            log_event(time(), ";".join(["se sirve el .torrent",torrent_file]))
 
     def perform_tracker_request(self, url, info_hash, peer_id, port):
         """ Make a tracker request to url, every interval seconds, using
@@ -218,6 +234,7 @@ class Torrent():
 
     def get_torrent_file(self):
         """ Get the file in the torrent using the torrent info. """
+        start_time = time()
         while not self.torrent_donwloaded:            
         
             tracker_response = make_tracker_request(self.info_hash, args.port, \
@@ -242,8 +259,10 @@ class Torrent():
             
             for key in self.active_peers:
                 self.active_peers[key].join()
+        log_event(time(), ";".join(["el tiempo de descarga fue",str(time()-start_time)]))
+        make_tracker_request(self.info_hash, args.port, self.peer_id, self.data[b"announce"].decode(), "completed")
                 
-        with open(self.peer_id.decode() + self.data[b"info"][b"name"].decode(), "wb") as f:
+        with open(args.out_folder + "/" + self.data[b"info"][b"name"].decode(), "wb") as f:
             for piece in self.torrent_pieces:
                 f.write(piece.bytes)
                 

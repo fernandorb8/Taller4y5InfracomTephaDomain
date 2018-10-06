@@ -94,7 +94,7 @@ def make_info_dict(file):
 
     # Generate the pieces
     pieces = slice(contents, piece_length)
-    pieces = [ sha1(p).hexdigest() for p in pieces ]
+    pieces = [ sha1(p).digest() for p in pieces ]
     info["pieces"] = collapse(pieces)
     return info
 

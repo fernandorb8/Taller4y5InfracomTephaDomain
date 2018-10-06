@@ -9,7 +9,7 @@ parser.add_argument('--host', type=str, default='localhost',
 parser.add_argument('--port', default=9000,
                     help='port of the server to connect')
 
-parser.add_argument('--buffsize', default=4096,
+parser.add_argument('--buffsize', default=16384,
                     help='size of buffer for the client')
 
 parser.add_argument('--out', default='test_client_1.log',
@@ -41,15 +41,46 @@ try:
     print(state)
     client.connect(address)
     client.send('ready-to-receive'.encode())
+    print('ready-to-receive')
+    chunks= int(client.recv(args.buffsize).decode('UTF-8'))
+    print(chunks)
+    datahash = client.recv(args.buffsize).decode('UTF-8')
     start = time.time()
-    video = client.recv(args.buffsize)
-    vhash = client.recv(args.buffsize).decode('UTF-8')
-    hashVideo = hashlib.sha256(video).hexdigest()
-    if vhash == hashVideo:
-        client.send('ok'.encode())
+    packets=True
+    data = ''
+    i=0
+    while packets:
+        request=client.recv(args.buffsize)
+        if 'END-FILE' not in request.decode('UTF-8'):
+            i+=1
+            data+= request.decode('UTF-8')
+        else:
+            packets=False
+            i=i+1
+            print('FIN MENSAJEEEEE')
+
+    print('sale')
+
+    new_file= open('new_file.txt','wb')
+    new_file.write(data.encode('UTF-8'))
+    new_file.flush()
+
+    sha1 = hashlib.sha1()
+    with open('new_file.txt', 'rb') as f:
+        while True:
+            data = f.read(args.buffsize)
+            if not data:
+                break
+            sha1.update(data)
+
+    hashData = sha1.hexdigest()
+    print(hashData)
+
+    if datahash == hashData:
+        client.send('ok'.encode('UTF-8'))
         log_event(time.time()-start,'send_state: ok, recieved succesfully')
     else:
-        client.send('error'.encode())
+        client.send('error'.encode('UTF-8'))
         log_event(time.time()-start,'send_state: error, Problems receiving the data')
 except Exception as err:
     print(err)

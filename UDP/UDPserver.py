@@ -1,4 +1,4 @@
-import socket , argparse, threading , hashlib , time
+import socket , argparse, threading , hashlib , time, io
 
 #arguments
 parser = argparse.ArgumentParser(description='UDP server')
@@ -7,11 +7,13 @@ parser.add_argument('--host', type=str, default='localhost', help='hostname of t
 
 parser.add_argument('--port', default=9000 , help='port of the server to connect')
 
-parser.add_argument('--buffsize', default=4096, help='size of buffer for the server')
+parser.add_argument('--buffsize', default=11760, help='size of buffer for the server')
 
 parser.add_argument('--nclients', default=1, help='number of clients the server will manage')
 
 parser.add_argument('--out', default='test_udpserver_1.log', help='output file for the log')
+
+parser.add_argument('--file', default='data.txt', help='file to be send')
 
 args = parser.parse_args()
 
@@ -19,10 +21,27 @@ args = parser.parse_args()
 UDPServerSocket = socket.socket( socket.AF_INET, socket.SOCK_DGRAM)
 UDPServerSocket.bind((args.host , args.port ))
 
-# Encoding and hashing of the videos that are going to be sent
-# TODO: Falta poner los dos videos.
-video = '************'.encode()
-hashVideo = hashlib.sha256(video).hexdigest()
+# Encoding and hashing of the videos that are going to be
+data = open(args.file,'rb')
+sha1 = hashlib.sha1()
+with open(args.file, 'rb') as f:
+    while True:
+        data = f.read(args.buffsize)
+        if not data:
+            break
+        sha1.update(data)
+
+hashData = sha1.hexdigest()
+print(hashData)
+#---------------------------
+
+fileChunks =[]
+with io.open(args.file,'r',encoding='UTF-8') as f:
+    l = f.read(args.buffsize)
+    while (l):
+        fileChunks.append(l)
+        l=f.read(args.buffsize)
+
 
 # Initialize the list of clients connected
 clients = []
@@ -58,12 +77,26 @@ def handle_client_connection(client_address,i):
         handle_socket.send('connected'.encode())
         response = handle_socket.recv(args.buffsize)
         if response == 'ready-to-receive'.encode():
-            start = time.time()
-            handle_socket.send(video)
-            handle_socket.send(hashVideo.encode())
-            request = handle_socket.recv(args.buffsize)
-            print(request)
-            log_event(time.time()-start,'send-state: '+ request.decode('UTF-8'))
+            handle_socket.send(str(len(fileChunks)).encode('UTF-8'))
+            handle_socket.send(hashData.encode('utf-8'))
+
+            i=0
+            packets = True
+            while packets:
+                start = time.time()
+                for chunk in fileChunks:
+                    handle_socket.send(chunk.encode('UTF-8'))
+                    i+=1
+
+                print('fin archivo')
+                for i in range(int('500')):
+                    handle_socket.send('END-FILE'.encode('UTF-8'))
+
+                print(str(i)+' packets send')
+                request = handle_socket.recv(args.buffsize)
+                print('HASTA AQUI')
+                print(request)
+                log_event(time.time()-start,'send-state: '+ request.decode('UTF-8'))
 
     except Exception as err:
         print(err)

@@ -17,7 +17,7 @@ parser.add_argument('--port', default=9000,
 parser.add_argument('--buffsize', default=4096,
                     help='size of buffer for the client')
 
-parser.add_argument('--out', default='test_client_1.log',
+parser.add_argument('--out', default='Clients_25_file_my250/test_client_1.log',
                     help='output file for the log')
 
 args = parser.parse_args()
@@ -25,15 +25,8 @@ args = parser.parse_args()
 # create an ipv4 (AF_INET) socket object using the tcp protocol (SOCK_STREAM)
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# create directory for log
-out_dir = 'Clients_{}_file_{}'.format(args.nclients, args.file) 
-if osp.exists(out_dir):
-    os.system('rm -rf ' + out_dir)
-
-os.mkdir(out_dir)
-
 # open log file
-fl = open(out_dir+'/'+args.out, 'w')
+fl = open(args.out, 'w')
 
 # header of file
 fl.write(time.strftime('%c'))

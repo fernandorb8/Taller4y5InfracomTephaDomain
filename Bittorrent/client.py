@@ -167,6 +167,8 @@ class Torrent():
             
             # Log served file. Size is in file name.
             log_event(time(), ";".join(["se sirve el .torrent",torrent_file]))
+        else:
+            log_event(time(), ";".join(["se descarga el .torrent",torrent_file]))
 
     def perform_tracker_request(self, url, info_hash, peer_id, port):
         """ Make a tracker request to url, every interval seconds, using

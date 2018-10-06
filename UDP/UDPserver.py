@@ -1,4 +1,4 @@
-import socket , argparse, threading , hashlib , time, io, asyncio
+import socket , argparse, threading , hashlib , time, io
 
 #arguments
 parser = argparse.ArgumentParser(description='UDP server')
@@ -13,7 +13,7 @@ parser.add_argument('--nclients', default=1, help='number of clients the server 
 
 parser.add_argument('--out', default='test_udpserver_1.log', help='output file for the log')
 
-parser.add_argument('--file', default='data1.txt', help='file to be send')
+parser.add_argument('--file', default='data.txt', help='file to be send')
 
 args = parser.parse_args()
 

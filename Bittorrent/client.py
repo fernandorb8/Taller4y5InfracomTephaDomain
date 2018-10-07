@@ -274,7 +274,7 @@ class Torrent():
             while not self.torrent_donwloaded:                
                 for val, piece in enumerate(self.torrent_pieces):
                     if piece.state == PieceState.DONT_HAVE:
-                        log_event(time(),";".join(["se solicita la pieza",val,"al peer", peer_sock.getpeername()[0]]))
+                        log_event(time(),";".join(["se solicita la pieza",str(val),"al peer", peer_sock.getpeername()[0]]))
                         piece.state = PieceState.PENDING
                         peer_sock.send(b'6' + val.to_bytes(4, byteorder="big"))
                         
@@ -287,7 +287,7 @@ class Torrent():
                             pass
                         elif response[:1] == b'3': #not interested
                             piece.state = PieceState.DONT_HAVE
-                            log_event(time(),";".join(["el peer", peer_sock.getpeername()[0],"no tiene la pieza", val]))
+                            log_event(time(),";".join(["el peer", peer_sock.getpeername()[0],"no tiene la pieza", str(val)]))
                         elif response[:1] == b'4': #have
                             pass
                         elif response[:1] == b'5': #bitfield
@@ -297,7 +297,7 @@ class Torrent():
                         elif response[:1] == b'7': #piece
                             piece.bytes = response[1:]
                             piece.state = PieceState.HAVE
-                            log_event(time(),";".join(["se recibe la pieza",val,"del peer", peer_sock.getpeername()[0]]))
+                            log_event(time(),";".join(["se recibe la pieza",str(val),"del peer", peer_sock.getpeername()[0]]))
                         elif response[:1] == b'8': #cancel
                             pass
                         
@@ -361,7 +361,7 @@ client = Torrent(args.torrent)
 
 def stop_exec(signum, frame):
     frame.f_globals["client"].stop()
-    del frame.f_globals["client"]
+    del frame.f_locals["client"]
     sys.exit()
 
 signal.signal(signal.SIGINT, stop_exec)

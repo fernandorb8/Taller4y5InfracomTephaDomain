@@ -279,7 +279,6 @@ class Torrent():
                         peer_sock.send(b'6' + val.to_bytes(4, byteorder="big"))
                         
                         response = peer_sock.recv(self.piece_length + 4086)
-                        log_event(time(),";".join(["se recibe el byte de respuesta",response[:1].decode(),"del peer", peer_sock.getpeername()[0]]))
                         if response[:1] == b'0': #choke
                             pass
                         elif response[:1] == b'1': #unchoke
@@ -301,6 +300,9 @@ class Torrent():
                             log_event(time(),";".join(["se recibe la pieza",str(val),"del peer", peer_sock.getpeername()[0]]))
                         elif response[:1] == b'8': #cancel
                             pass
+                        
+                        if piece.state == PieceState.PENDING:
+                            piece.state = PieceState.DONT_HAVE
                         
                         self.torrent_donwloaded = self.is_torrent_downloaded()
         except Exception as err:

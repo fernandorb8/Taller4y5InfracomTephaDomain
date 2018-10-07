@@ -279,7 +279,7 @@ class Torrent():
                         peer_sock.send(b'6' + val.to_bytes(4, byteorder="big"))
                         
                         response = peer_sock.recv(self.piece_length + 4086)
-                        log_event(time(),";".join(["se recibe el byte de respuesta",response[:1],"del peer", peer_sock.getpeername()[0]]))
+                        log_event(time(),";".join(["se recibe el byte de respuesta",response[:1].decode(),"del peer", peer_sock.getpeername()[0]]))
                         if response[:1] == b'0': #choke
                             pass
                         elif response[:1] == b'1': #unchoke
@@ -361,7 +361,7 @@ class PieceState(Enum):
 client = Torrent(args.torrent)
 
 def stop_exec(signum, frame):
-    frame.f_globals["client"].stop()
+    frame.f_locals["client"].stop()
     del frame.f_locals["client"]
     sys.exit()
 

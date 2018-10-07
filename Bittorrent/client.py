@@ -293,6 +293,7 @@ class Torrent():
                             pass
                         elif response[:1] == b'3': #not interested
                             piece.state = PieceState.DONT_HAVE
+                            peer_sock.send(b'3')
                             log_event(time(),";".join(["el peer", peer_sock.getpeername()[0],"no tiene la pieza", str(val)]))
                         elif response[:1] == b'4': #have
                             pass

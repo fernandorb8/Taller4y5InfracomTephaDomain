@@ -279,6 +279,7 @@ class Torrent():
                         peer_sock.send(b'6' + val.to_bytes(4, byteorder="big"))
                         
                         response = peer_sock.recv(self.piece_length + 4086)
+                        log_event(time(),";".join(["se recibe el byte de respuesta",response[:1],"del peer", peer_sock.getpeername()[0]]))
                         if response[:1] == b'0': #choke
                             pass
                         elif response[:1] == b'1': #unchoke

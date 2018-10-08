@@ -3,17 +3,17 @@ import socket , argparse, threading , hashlib , time, io
 #arguments
 parser = argparse.ArgumentParser(description='UDP server')
 
-parser.add_argument('--host', type=str, default='157.253.205.65', help='hostname of the server to connect')
+parser.add_argument('--host', type=str, default='localhost', help='hostname of the server to connect')
 
 parser.add_argument('--port', default=9000 , help='port of the server to connect')
 
 parser.add_argument('--buffsize', default=60416, help='size of buffer for the server')
 
-parser.add_argument('--nclients', default=1, help='number of clients the server will manage')
+parser.add_argument('--nclients', default=25, help='number of clients the server will manage')
 
-parser.add_argument('--out', default='test_udpserver_1.log', help='output file for the log')
+parser.add_argument('--out', default='test_udpserver_25_clients_1.log', help='output file for the log')
 
-parser.add_argument('--file', default='data.txt', help='file to be send')
+parser.add_argument('--file', default='data1.txt', help='file to be send')
 
 args = parser.parse_args()
 
@@ -85,7 +85,7 @@ def handle_client_connection(client_address,i):
                 start = time.time()
                 for chunk in fileChunks:
                     handle_socket.send(chunk.encode('ISO-8859-1'))
-                    time.sleep(0.22)
+                    time.sleep(0.18)
                     print('sending data...')
                     i+=1
                 packets=False

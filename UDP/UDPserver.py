@@ -1,3 +1,4 @@
+# coding=utf-8
 import socket , argparse, threading , hashlib , time, io
 
 #arguments

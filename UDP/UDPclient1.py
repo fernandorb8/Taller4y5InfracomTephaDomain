@@ -3,7 +3,7 @@ import socket , argparse, threading , hashlib , time, select
 #Arguments for the client
 parser = argparse.ArgumentParser(description='UDP client')
 
-parser.add_argument('--host', type=str, default='localhost',
+parser.add_argument('--host', type=str, default='157.253.205.65',
                     help='hostname of the server to connect')
 
 parser.add_argument('--port', default=9000,
@@ -32,12 +32,17 @@ def log_event(time, message):
     fl.write('-----------------'+'\n')
     fl.flush()
 
+print('inicio')
+
 # create an ipv4 (AF_INET) socket object using the UDP protocol (SOCK_DGRAM)
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+print('conectó')
 try:
     client.sendto('connect'.encode(),(args.host,args.port))
-
+    print('envió connect')
     state , address = client.recvfrom(args.buffsize)
+    print('recibió address')
+    print(address)
     print(state)
     client.connect(address)
     client.send('ready-to-receive'.encode())

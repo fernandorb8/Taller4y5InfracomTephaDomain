@@ -3,7 +3,7 @@ import socket , argparse, threading , hashlib , time, io
 #arguments
 parser = argparse.ArgumentParser(description='UDP server')
 
-parser.add_argument('--host', type=str, default='localhost', help='hostname of the server to connect')
+parser.add_argument('--host', type=str, default='157.253.205.65', help='hostname of the server to connect')
 
 parser.add_argument('--port', default=9000 , help='port of the server to connect')
 
@@ -13,7 +13,7 @@ parser.add_argument('--nclients', default=25, help='number of clients the server
 
 parser.add_argument('--out', default='test_udpserver_25_clients_1.log', help='output file for the log')
 
-parser.add_argument('--file', default='data1.txt', help='file to be send')
+parser.add_argument('--file', default='data.txt', help='file to be send')
 
 args = parser.parse_args()
 

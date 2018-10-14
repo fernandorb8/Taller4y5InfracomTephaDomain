@@ -28,7 +28,7 @@ from bencode import Decoder, Encoder
 #Arguments for the tracker
 parser = argparse.ArgumentParser(description='Bittorrent client')
 
-parser.add_argument('--file', type=str, default="test.torrent",
+parser.add_argument('--torrent', type=str, default="test.torrent",
                     help='torrent file')
 
 parser.add_argument('--host', type=str, default="localhost",
@@ -139,13 +139,14 @@ class Torrent():
 
         self.data = read_torrent_file(torrent_file)
 
-        self.info_hash: bytes = sha1(Encoder(self.data[b"info"]).encode()).digest()
+        self.info_hash = sha1(Encoder(self.data[b"info"]).encode()).digest()
         self.peer_id = generate_peer_id()
         self.handshake = generate_handshake(self.info_hash, self.peer_id)
 
+        self.file_length = int(self.data[b"info"][b"length"])
         self.piece_length = int(self.data[b"info"][b"piece length"])
         self.num_torrent_pieces = math.ceil(int(self.data[b"info"][b"length"])/self.piece_length)
-        self.torrent_pieces = [PieceInfo() for i in range(self.num_torrent_pieces)]
+        self.torrent_pieces = [PieceInfo(self.data[b"info"][b"pieces"][i*20:(i+1)*20]) for i in range(self.num_torrent_pieces)]
         
         self.torrent_donwloaded = False
 
@@ -167,6 +168,8 @@ class Torrent():
             
             # Log served file. Size is in file name.
             log_event(time(), ";".join(["se sirve el .torrent",torrent_file]))
+        else:
+            log_event(time(), ";".join(["se descarga el .torrent",torrent_file]))
 
     def perform_tracker_request(self, url, info_hash, peer_id, port):
         """ Make a tracker request to url, every interval seconds, using
@@ -272,10 +275,16 @@ class Torrent():
             while not self.torrent_donwloaded:                
                 for val, piece in enumerate(self.torrent_pieces):
                     if piece.state == PieceState.DONT_HAVE:
+                        log_event(time(),";".join(["se solicita la pieza",str(val),"al peer", peer_sock.getpeername()[0]]))
                         piece.state = PieceState.PENDING
                         peer_sock.send(b'6' + val.to_bytes(4, byteorder="big"))
                         
-                        response = peer_sock.recv(self.piece_length + 4086)
+                        response = peer_sock.recv(min(self.piece_length + 1, 2048))
+                        
+                        if val == 3572:
+                            piece.state = PieceState.PENDING
+                            pass
+                        
                         if response[:1] == b'0': #choke
                             pass
                         elif response[:1] == b'1': #unchoke
@@ -284,6 +293,8 @@ class Torrent():
                             pass
                         elif response[:1] == b'3': #not interested
                             piece.state = PieceState.DONT_HAVE
+                            peer_sock.send(b'3')
+                            log_event(time(),";".join(["el peer", peer_sock.getpeername()[0],"no tiene la pieza", str(val)]))
                         elif response[:1] == b'4': #have
                             pass
                         elif response[:1] == b'5': #bitfield
@@ -291,10 +302,36 @@ class Torrent():
                         elif response[:1] == b'6': #request
                             pass
                         elif response[:1] == b'7': #piece
-                            piece.bytes = response[1:]
-                            piece.state = PieceState.HAVE
+                            # Sockets usage for large files 
+                            chunks = []
+                            bytes_recd = len(response)
+                            if(val != self.num_torrent_pieces-1):
+                                while bytes_recd < self.piece_length + 1:
+                                    chunk = peer_sock.recv(min(self.piece_length + 1 - bytes_recd, 2048))
+                                    if chunk == b'':
+                                        raise RuntimeError("socket connection broken")
+                                    chunks.append(chunk)
+                                    bytes_recd = bytes_recd + len(chunk)
+                            else:
+                                last_piece_length = self.file_length - self.piece_length*(self.num_torrent_pieces-1)
+                                while bytes_recd < last_piece_length + 1:
+                                    chunk = peer_sock.recv(min(last_piece_length + 1 - bytes_recd, 2048))
+                                    if chunk == b'':
+                                        raise RuntimeError("socket connection broken")
+                                    chunks.append(chunk)
+                                    bytes_recd = bytes_recd + len(chunk)
+                                    
+                            response = response + b''.join(chunks)
+                            
+                            if piece.piece_hash == sha1(response[1:]).digest():
+                                piece.bytes = response[1:]
+                                piece.state = PieceState.HAVE
+                                log_event(time(),";".join(["se recibe la pieza",str(val),"del peer", peer_sock.getpeername()[0]]))
                         elif response[:1] == b'8': #cancel
                             pass
+                        
+                        if piece.state == PieceState.PENDING:
+                            piece.state = PieceState.DONT_HAVE
                         
                         self.torrent_donwloaded = self.is_torrent_downloaded()
         except Exception as err:
@@ -340,10 +377,15 @@ class Torrent():
 class PieceInfo():
     """ Information of a piece of the torrent """
 
-    def __init__(self):
+    def __init__(self, piece_hash):
 
         self.bytes = b''
         self.state = PieceState.DONT_HAVE
+        self.piece_hash = piece_hash
+        
+    def is_piece_hash(self, piece_hash):
+        """ Compares the piece's hash with the one received by parameter """
+        return self.piece_hash == piece_hash
 
 
 class PieceState(Enum):
@@ -352,11 +394,11 @@ class PieceState(Enum):
     PENDING = 2
     HAVE = 3
 
-client: Torrent = Torrent(args.file)
+client = Torrent(args.torrent)
 
-def stop_exec():
-    client.stop()
-    del client
+def stop_exec(signum, frame):
+    frame.f_locals["client"].stop()
+    del frame.f_locals["client"]
     sys.exit()
 
 signal.signal(signal.SIGINT, stop_exec)

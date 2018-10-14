@@ -1,9 +1,9 @@
-import socket , argparse, threading , hashlib , time
+import socket , argparse, threading , hashlib , time, select
 
 #Arguments for the client
 parser = argparse.ArgumentParser(description='UDP client')
 
-parser.add_argument('--host', type=str, default='157.253.205.65',
+parser.add_argument('--host', type=str, default='localhost',
                     help='hostname of the server to connect')
 
 parser.add_argument('--port', default=9000,
@@ -12,7 +12,7 @@ parser.add_argument('--port', default=9000,
 parser.add_argument('--buffsize', default=65536,
                     help='size of buffer for the client')
 
-parser.add_argument('--out', default='test_client_1.log',
+parser.add_argument('--out', default='test_client_25.log',
                     help='output file for the log')
 
 args = parser.parse_args()
@@ -48,26 +48,30 @@ try:
     packets=True
     data = ''
     i=0
+    client.setblocking(0)
+
     while packets:
-        request=client.recv(args.buffsize)
-        if 'END-FILE' not in request.decode('ISO-8859-1'):
-            i+=1
-            data+= request.decode('ISO-8859-1')
-            print('receiving data...'+str(i))
-        else:
-            packets=False
-            for x in range(10):
-                print('END-MESSAGE')
+        ready = select.select([client], [], [], 20)
+        if ready[0]:
+            request=client.recv(args.buffsize)
+            if 'END-FILE' not in request.decode('ISO-8859-1'):
+                i+=1
+                data+= request.decode('ISO-8859-1')
+                print('receiving data...'+str(i))
+            else:
+                packets=False
+                for x in range(10):
+                    print('END-MESSAGE')
 
 
     print(str(i)+' packets recieved')
 
-    new_file= open('new_file.txt','wb')
+    new_file= open('new_file25.txt','wb')
     new_file.write(data.encode('ISO-8859-1'))
     new_file.flush()
 
     sha1 = hashlib.sha1()
-    with open('new_file.txt', 'rb') as f:
+    with open('new_file25.txt', 'rb') as f:
         while True:
             data = f.read(args.buffsize)
             if not data:

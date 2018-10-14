@@ -88,6 +88,8 @@ def sendVideo(client_socket, start):
         if sent == 0:
             log_event(time.time()-start, 'Connection broken')
         total = total + sent
+        print('{}%'.format((total/len(fileContents))))
+        time.sleep(0.3)
     log_event(time.time()-start, 'Video transferred successfully')
 
 def handle_client_connection(client_socket):

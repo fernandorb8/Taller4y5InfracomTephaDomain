@@ -56,11 +56,13 @@ def receiveVideo(client, start):
     chunks = []
     b_recv = 0
     while b_recv < len(fileContents):
-        chunk = client.recv(min(len(fileContents - b_recv, args.buffsize)))
+        chunk = client.recv(min(len(fileContents) - b_recv, args.buffsize))
+        print('Received chunk!')
         if chunk == b'':
             log_event(time.time()-start, 'Connection broken')
         chunks.append(chunk)
-        b_recv = chunk + b_recv
+        b_recv = len(chunk) + b_recv
+        print('{}%'.format((b_recv/len(fileContents)*100)))
     log_event(time.time()-start, 'Video received successfully')
     client.send('OK'.encode())
     return b''.join(chunks)
@@ -68,8 +70,7 @@ def receiveVideo(client, start):
 # connect the client
 try:
     #Initialization of handshake
-    #client.connect((args.host, args.port))
-    client.connect(('192.168.0.15', 9000))
+    client.connect((args.host, args.port))
     print('Connected to Server!')
     client.send('SYN'.encode())
     # receive the response data

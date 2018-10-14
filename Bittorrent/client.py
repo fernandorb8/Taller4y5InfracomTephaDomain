@@ -221,6 +221,7 @@ class Torrent():
                     index = int.from_bytes(request[1:5], byteorder="big")
                     if self.torrent_pieces[index].state == PieceState.HAVE:
                         client_socket.send(b"7"+self.torrent_pieces[index].bytes) # TO-DO add begin and index
+                        log_event(time(), ";".join(["se envia la pieza",index,"al cliente",client_socket.getpeername()[0]]))
                     else:
                         client_socket.send(b"3")
                     request = client_socket.recv(4096)

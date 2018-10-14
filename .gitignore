@@ -4,13 +4,16 @@
 bin
 .classpath
 target
+.pydevproject
 
 #Python
 *.pyc
 
-*.log
-
 #Large files
+*.mp4
 
 files
 
+
+#Bittorrent test logs and folders
+test

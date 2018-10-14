@@ -90,9 +90,9 @@ def sendVideo(client_socket, start):
         total = total + sent
         print('{}%'.format((total/len(fileContents))))
         time.sleep(0.3)
-    log_event(time.time()-start, 'Video transferred successfully')
+    log_event(time.time()-start, 'Video transferred successfully, {} packages sent'.format(total))
 
-def handle_client_connection(client_socket):
+def handle_client_connection(client_socket, id):
     try:
         request = client_socket.recv(args.buffsize)
         end = False
@@ -105,7 +105,7 @@ def handle_client_connection(client_socket):
             elif request == b'ACK':
                 # Start time
                 start = time.time()
-                log_event(start, 'Start sending video')
+                log_event(start, 'Start sending video to client {}'.format(id))
                 print('Sending video ...')
                 # client_socket.send(video)
                 sendVideo(client_socket, start)
@@ -113,11 +113,11 @@ def handle_client_connection(client_socket):
                 # client_socket.send(hashVideo)
                 if request == b'OK':
                     # Stop time
-                    log_event(time.time()-start, 'Video send successfully')
+                    log_event(time.time()-start, 'Video send successfully to client {}'.format(id))
                     client_socket.send('bye'.encode())
             elif request == b'OK':
                 # Stop time
-                log_event(time.time()-start, 'Video send successfully')
+                log_event(time.time()-start, 'Video send successfully to client {}'.format(id))
                 client_socket.send('bye'.encode())
                 end = True
             request = client_socket.recv(args.buffsize)
@@ -132,9 +132,11 @@ while True:
     clients.append(client_sock)
     if args.nclients == len(clients):
         print('Starting threads ...')
+        i = 0
         for client_sock in clients:
             client_handler = threading.Thread(
                 target=handle_client_connection,
-                args=(client_sock,)  # without comma you'd get a... TypeError: handle_client_connection() argument after * must be a sequence, not _socketobject
+                args=(client_sock,i,)  # without comma you'd get a... TypeError: handle_client_connection() argument after * must be a sequence, not _socketobject
             )
             client_handler.start()
+            i = i + 1

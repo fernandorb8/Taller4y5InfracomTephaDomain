@@ -39,7 +39,7 @@ video = fileContents
 fl = open(args.out, 'w')
 
 # header of file
-fl.write(time.strftime('%c'))
+fl.write(time.strftime('%c') + '\n')
 fl.write('Listening on {}:{} \n'.format(args.host, args.port))
 fl.write('buffsize {}\n'.format(args.buffsize))
 fl.write('-----------------\n')
@@ -57,13 +57,12 @@ def receiveVideo(client, start):
     b_recv = 0
     while b_recv < len(fileContents):
         chunk = client.recv(min(len(fileContents) - b_recv, args.buffsize))
-        print('Received chunk!')
         if chunk == b'':
             log_event(time.time()-start, 'Connection broken')
         chunks.append(chunk)
         b_recv = len(chunk) + b_recv
         print('{}%'.format((b_recv/len(fileContents)*100)))
-    log_event(time.time()-start, 'Video received successfully')
+    log_event(time.time()-start, 'Video received successfully, {} packages received'.format(b_recv))
     client.send('OK'.encode())
     return b''.join(chunks)
 

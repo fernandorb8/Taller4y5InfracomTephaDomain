@@ -41,7 +41,7 @@ try:
     client.sendto('connect'.encode(),(args.host,args.port))
     print('envió connect')
     state , address = client.recvfrom(args.buffsize)
-    print('conectado')
+    print('conectado 2')
     print(address)
     print(state)
     client.connect(address)

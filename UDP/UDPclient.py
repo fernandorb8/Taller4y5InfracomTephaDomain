@@ -32,12 +32,16 @@ def log_event(time, message):
     fl.write('-----------------'+'\n')
     fl.flush()
 
+print('begin')
 # create an ipv4 (AF_INET) socket object using the UDP protocol (SOCK_DGRAM)
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+print('conectado')
 try:
     client.sendto('connect'.encode(),(args.host,args.port))
-
+    print('envió connect')
     state , address = client.recvfrom(args.buffsize)
+    print('conectado')
+    print(address)
     print(state)
     client.connect(address)
     client.send('ready-to-receive'.encode())

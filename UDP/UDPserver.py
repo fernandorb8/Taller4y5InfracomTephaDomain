@@ -9,7 +9,7 @@ parser.add_argument('--port', default=9000 , help='port of the server to connect
 
 parser.add_argument('--buffsize', default=60416, help='size of buffer for the server')
 
-parser.add_argument('--nclients', default=25, help='number of clients the server will manage')
+parser.add_argument('--nclients', default=1, help='number of clients the server will manage')
 
 parser.add_argument('--out', default='test_udpserver_25_clients_1.log', help='output file for the log')
 

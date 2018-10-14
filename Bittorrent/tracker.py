@@ -32,7 +32,7 @@ parser.add_argument('--host', type=str,
 parser.add_argument('--port',
                     help='port of the tracker')
 
-parser.add_argument('--out', default='test_tracker_1.log',
+parser.add_argument('--out', default='test_tracker.log',
                     help='output file for the log')
 
 parser.add_argument('--out_folder', default='test', type=str,

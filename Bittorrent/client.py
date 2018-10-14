@@ -37,7 +37,7 @@ parser.add_argument('--host', type=str, default="localhost",
 parser.add_argument('--port', default=6881, type=int,
                     help='port of the client')
 
-parser.add_argument('--out', default='test_client_1.log', type=str,
+parser.add_argument('--out', default='test_client.log', type=str,
                     help='output file name for the log')
 
 parser.add_argument('--out_folder', default='test', type=str,
@@ -221,7 +221,7 @@ class Torrent():
                     index = int.from_bytes(request[1:5], byteorder="big")
                     if self.torrent_pieces[index].state == PieceState.HAVE:
                         client_socket.send(b"7"+self.torrent_pieces[index].bytes) # TO-DO add begin and index
-                        log_event(time(), ";".join(["se envia la pieza",index,"al cliente",client_socket.getpeername()[0]]))
+                        log_event(time(), ";".join(["se envia la pieza",str(index),"al cliente",client_socket.getpeername()[0]]))
                     else:
                         client_socket.send(b"3")
                     request = client_socket.recv(4096)

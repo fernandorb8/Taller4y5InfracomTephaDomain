@@ -10,7 +10,7 @@ import os.path as osp
 #Arguments for the server
 parser = argparse.ArgumentParser(description='TCP server')
 
-parser.add_argument('--host', type=str, default='localhost',
+parser.add_argument('--host', type=str, default='',
                     help='hostname of the server to connect')
 
 parser.add_argument('--port', default=9000,
@@ -25,7 +25,7 @@ parser.add_argument('--nclients', type=int, default=1,
 parser.add_argument('--out', default='test_server_1.log',
                     help='output file for the log')
 
-parser.add_argument('--size', default=8*1024,
+parser.add_argument('--size', default=4*1024,
                     help='output file for the log')
 
 parser.add_argument('--file', default='./../files/myfile_250',
@@ -39,7 +39,6 @@ server.bind((args.host,args.port))
 server.listen(5) 
 
 # Encoding and hashing of the videos that are going to be sent
-# TODO: Falta poner los dos videos.
 video = '************'.encode()
 hashVideo = hashlib.sha256(video).hexdigest().encode()
 
@@ -54,14 +53,15 @@ video = fileContents
 hashVideo = hashlib.sha256(video).hexdigest().encode()
 
 # create directory for log
-out_dir = 'Clients_{}_file_{}'.format(args.nclients, args.file) 
-if osp.exists(out_dir):
-    os.system('rm -rf ' + out_dir)
+# out_dir = 'Clients_{}_file_{}'.format(args.nclients, args.file.split('/')[-1]) 
+# if osp.exists(out_dir):
+#     os.system('rm -rf ' + out_dir)
 
-os.mkdir(out_dir)
+# os.mkdir(out_dir)
 
 # open log file
-fl = open(out_dir+'/'+args.out, 'w')
+# fl = open(out_dir+'/'+args.out, 'w')
+fl = open(args.out, 'w')
 
 # header of file
 fl.write(time.strftime('%c'))
@@ -69,15 +69,26 @@ fl.write('Listening on {}:{}\n'.format(args.host, args.port))
 fl.write('Buffsize {}\n'.format(args.buffsize))
 fl.write('Number of clients: {}\n'.format(args.nclients))
 fl.write('-----------------\n')
+fl.flush()
 
 # function that writes on the log file
 def log_event(time, message):
     fl.write('execution time: {} s \n'.format(time))
     fl.write('{} \n'.format(message))
     fl.write('----------------- \n')
+    fl.flush()
 
 
 print('Listening on {}:{}'.format(args.host, args.port))
+
+def sendVideo(client_socket, start):
+    total = 0
+    while(total < len(fileContents)):
+        sent = client_socket.send(video[total:])
+        if sent == 0:
+            log_event(time.time()-start, 'Connection broken')
+        total = total + sent
+    log_event(time.time()-start, 'Video transferred successfully')
 
 def handle_client_connection(client_socket):
     try:
@@ -94,9 +105,10 @@ def handle_client_connection(client_socket):
                 start = time.time()
                 log_event(start, 'Start sending video')
                 print('Sending video ...')
-                client_socket.send(video)
+                # client_socket.send(video)
+                sendVideo(client_socket, start)
                 print('Sending hash ...')
-                client_socket.send(hashVideo)
+                # client_socket.send(hashVideo)
                 if request == b'OK':
                     # Stop time
                     log_event(time.time()-start, 'Video send successfully')

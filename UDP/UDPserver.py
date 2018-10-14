@@ -69,10 +69,12 @@ print('Listening on {}:{}'.format(args.host, args.port))
 
 def handle_client_connection(client_address,i):
     try:
+        print('entra al metodo')
         port_handle= args.port + i
         handle_socket = socket.socket( socket.AF_INET, socket.SOCK_DGRAM)
         handle_socket.bind((args.host , port_handle ))
         handle_socket.connect(client_address)
+        print('conexión')
         handle_socket.send('connected'.encode())
         response = handle_socket.recv(args.buffsize)
         if response == 'ready-to-receive'.encode():
@@ -105,12 +107,15 @@ while True:
     bytesAddressPair,address = UDPServerSocket.recvfrom(args.buffsize)
     print('Accepted connection from {}:{}'.format(address[0], address[1]))
     clients.append(address)
+
     if args.nclients == len(clients):
         i=1
         for client_address in clients:
+            print('entra al for')
             client_handler = threading.Thread(
                 target=handle_client_connection,
                 args=(client_address,i,)  # without comma you'd get a... TypeError: handle_client_connection() argument after * must be a sequence, not _socketobject
             )
             client_handler.start()
+            print('start thread')
             i+=1

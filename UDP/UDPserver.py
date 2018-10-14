@@ -77,7 +77,7 @@ def handle_client_connection(client_address,i):
         handle_socket.connect(client_address)
         print('conexión')
         print(client_address)
-        handle_socket.sendto('connected'.encode(),client_address)
+        handle_socket.sendto(str(port_handle).encode(),client_address)
         print('envia connected')
         response = handle_socket.recv(args.buffsize)
         if response == 'ready-to-receive'.encode():

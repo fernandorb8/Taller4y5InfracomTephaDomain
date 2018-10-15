@@ -70,15 +70,11 @@ print('Listening on {}:{}'.format(args.host, args.port))
 
 def handle_client_connection(client_address,i):
     try:
-        print('entra al metodo')
         port_handle= args.port + i
         handle_socket = socket.socket( socket.AF_INET, socket.SOCK_DGRAM)
         handle_socket.bind((args.host , port_handle ))
         handle_socket.connect(client_address)
-        print('conexión')
-        print(client_address)
-        handle_socket.sendto(str(port_handle).encode(),client_address)
-        print('envia connected')
+        handle_socket.send(str(port_handle).encode())
         response = handle_socket.recv(args.buffsize)
         if response == 'ready-to-receive'.encode():
             handle_socket.send(str(len(fileChunks)).encode('ISO-8859-1'))
@@ -114,11 +110,9 @@ while True:
     if args.nclients == len(clients):
         i=1
         for client_address in clients:
-            print('entra al for')
             client_handler = threading.Thread(
                 target=handle_client_connection,
                 args=(client_address,i,)  # without comma you'd get a... TypeError: handle_client_connection() argument after * must be a sequence, not _socketobject
             )
             client_handler.start()
-            print('start thread')
             i+=1

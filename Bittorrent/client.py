@@ -149,6 +149,8 @@ class Torrent():
         self.torrent_pieces = [PieceInfo(self.data[b"info"][b"pieces"][i*20:(i+1)*20]) for i in range(self.num_torrent_pieces)]
         
         self.torrent_donwloaded = False
+        
+        self.peers = []
 
         # Has file and is going to share
         if args.seed:
@@ -317,10 +319,12 @@ class Torrent():
                                     
                             response = response + b''.join(chunks)
                             
+                            piece.lock.acquire()
                             if piece.piece_hash == sha1(response[1:]).digest():
                                 piece.bytes = response[1:]
                                 piece.state = PieceState.HAVE
                                 log_event(time(),";".join(["se recibe la pieza",str(val),"del peer", peer_sock.getpeername()[0]]))
+                            piece.lock.release()
                         elif response[:1] == b'8': #cancel
                             pass
                         piece.lock.acquire()

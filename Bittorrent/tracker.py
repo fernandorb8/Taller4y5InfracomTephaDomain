@@ -29,7 +29,7 @@ parser = argparse.ArgumentParser(description='Bittorrent Tracker')
 parser.add_argument('--host', type=str,
                     help='hostname of the tracker')
 
-parser.add_argument('--port',
+parser.add_argument('--port', type=int, default=9010,
                     help='port of the tracker')
 
 parser.add_argument('--out', default='test_tracker.log',
@@ -84,6 +84,10 @@ def add_peer(torrents, info_hash, peer_id, ip, port, event):
     # Otherwise, add the info_hash and the peer
     else:
         torrents[info_hash] = [(peer_id, ip, port)]
+        
+    if "finalizados" not in torrents:
+        torrents["finalizados"] = 0
+        
     # If download has finished or started log the time.
     if event:
         if event == "started":
@@ -91,6 +95,8 @@ def add_peer(torrents, info_hash, peer_id, ip, port, event):
             log_event(time.time(),";".join([peer_id,"la descarga inicia"]))
         elif event == "completed":
             log_event(time.time(),";".join([peer_id,"el tiempo de descarga fue",str(time.time()-torrents[peer_id])]))
+            torrents["finalizados"] = torrents["finalizados"] + 1
+            log_event(time.time(),";".join([peer_id,"es el cliente",str(torrents["finalizados"]),"en terminar"]))
         else:
             log_event(time.time(),";".join([peer_id,"contacto de"]))
 

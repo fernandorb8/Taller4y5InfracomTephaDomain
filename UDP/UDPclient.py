@@ -35,6 +35,7 @@ def log_event(time, message):
 
 # create an ipv4 (AF_INET) socket object using the UDP protocol (SOCK_DGRAM)
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+client.bind(('',9000))
 try:
     client.sendto('connect'.encode(),(args.host,args.port))
     port = client.recv(args.buffsize)

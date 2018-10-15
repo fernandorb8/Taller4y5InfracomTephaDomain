@@ -109,7 +109,7 @@ while True:
     print(address)
     print('message')
     print(bytesAddressPair)
-        
+
     clients.append(address)
     if args.nclients == len(clients):
         i=1

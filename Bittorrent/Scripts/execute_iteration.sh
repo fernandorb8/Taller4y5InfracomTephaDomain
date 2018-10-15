@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-NUMCLIENTS=4
-NUMITER=4
+NUMCLIENTS=3
+NUMITER=2
 TORFILE=250
 USERNAME="isis"
 declare -a HOSTS=(
@@ -27,7 +27,7 @@ do
 	then PREFIX="000"
 	else PREFIX="00"
 	fi		
-	SCRIPT="cd ~/Taller4y5InfracomTephaDomain/Bittorrent/ && python3 client.py --torrent myfile_${TORFILE}.torrent --host ${HOSTS[$i-1]} --out client_${i}.log --out_folder Clients_${NUMCLIENTS}_${NUMITER}_${TORFILE} --cliversion ${PREFIX}${i}"
+	SCRIPT="cd ~/Taller4y5InfracomTephaDomain/Bittorrent/ && python3 client.py --torrent myfile_${TORFILE}.torrent --host ${HOSTS[$i-1]} --out client_${i}.log --out_folder Clients_${NUMCLIENTS}_${NUMITER}_${TORFILE} --cliversion ${PREFIX}${i} --port 688${NUMITER}"
 	
 	if [ $i -eq 1 ] 
 	then SCRIPT="${SCRIPT} --seed"

@@ -13,7 +13,7 @@ declare -a HOSTS=(
  "172.24.101.215"
  "172.24.101.216"
 )
-SCRIPT="pkill -KILL python"
+SCRIPT="pkill python"
 pkill python
 for HOSTNAME in ${HOSTS[@]};
 do

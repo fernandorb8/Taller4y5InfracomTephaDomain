@@ -1,7 +1,7 @@
 #!/bin/bash
-declare -a NUMCLIENTS=(2 3 4) 
+declare -a NUMCLIENTS=(2 3 4 5 6 10) 
 declare -a NUMITER=(1 2 3 4 5) 
-declare -a TORFILE=(250)
+declare -a TORFILE=(250 500)
 USERNAME="isis"
 declare -a HOSTS=(
  "172.24.101.207"

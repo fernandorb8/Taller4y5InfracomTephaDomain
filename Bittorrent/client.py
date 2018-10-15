@@ -274,16 +274,14 @@ class Torrent():
         try:
             while not self.torrent_donwloaded:                
                 for val, piece in enumerate(self.torrent_pieces):
+                    piece.lock.acquire()
                     if piece.state == PieceState.DONT_HAVE:
                         log_event(time(),";".join(["se solicita la pieza",str(val),"al peer", peer_sock.getpeername()[0]]))
                         piece.state = PieceState.PENDING
+                        piece.lock.release()
                         peer_sock.send(b'6' + val.to_bytes(4, byteorder="big"))
                         
                         response = peer_sock.recv(min(self.piece_length + 1, 2048))
-                        
-                        if val == 3572:
-                            piece.state = PieceState.PENDING
-                            pass
                         
                         if response[:1] == b'0': #choke
                             pass
@@ -292,7 +290,6 @@ class Torrent():
                         elif response[:1] == b'2': #interested
                             pass
                         elif response[:1] == b'3': #not interested
-                            piece.state = PieceState.DONT_HAVE
                             log_event(time(),";".join(["el peer", peer_sock.getpeername()[0],"no tiene la pieza", str(val)]))
                         elif response[:1] == b'4': #have
                             pass
@@ -328,9 +325,10 @@ class Torrent():
                                 log_event(time(),";".join(["se recibe la pieza",str(val),"del peer", peer_sock.getpeername()[0]]))
                         elif response[:1] == b'8': #cancel
                             pass
-                        
+                        piece.lock.acquire()
                         if piece.state == PieceState.PENDING:
                             piece.state = PieceState.DONT_HAVE
+                        piece.lock.release()
                         
                         self.torrent_donwloaded = self.is_torrent_downloaded()
         except Exception as err:
@@ -385,6 +383,7 @@ class PieceInfo():
         self.bytes = b''
         self.state = PieceState.DONT_HAVE
         self.piece_hash = piece_hash
+        self.lock = Lock()
         
     def is_piece_hash(self, piece_hash):
         """ Compares the piece's hash with the one received by parameter """

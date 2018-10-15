@@ -274,10 +274,11 @@ class Torrent():
         try:
             while not self.torrent_donwloaded:                
                 for val, piece in enumerate(self.torrent_pieces):
-                    piece.lock.acquire()
                     if piece.state == PieceState.DONT_HAVE:
-                        log_event(time(),";".join(["se solicita la pieza",str(val),"al peer", peer_sock.getpeername()[0]]))
-                        piece.state = PieceState.PENDING
+                        piece.lock.acquire()
+                        if piece.state == PieceState.DONT_HAVE:
+                            log_event(time(),";".join(["se solicita la pieza",str(val),"al peer", peer_sock.getpeername()[0]]))
+                            piece.state = PieceState.PENDING
                         piece.lock.release()
                         peer_sock.send(b'6' + val.to_bytes(4, byteorder="big"))
                         

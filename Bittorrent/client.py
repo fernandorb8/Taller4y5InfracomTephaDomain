@@ -239,10 +239,10 @@ class Torrent():
     def get_torrent_file(self):
         """ Get the file in the torrent using the torrent info. """
         start_time = time()
+        tracker_response = make_tracker_request(self.info_hash, args.port, \
+                                                self.peer_id, self.data[b"announce"].decode(),"started")
         while not self.torrent_donwloaded:            
         
-            tracker_response = make_tracker_request(self.info_hash, args.port, \
-                                                    self.peer_id, self.data[b"announce"].decode(),"started")
             peers = tracker_response[b"peers"]
             peers = decode_expanded_peers(peers)
             self.active_peers = {}
@@ -362,6 +362,9 @@ class Torrent():
             if not args.seed: # Client did not start as seed
                 self.get_torrent_file_loop = Thread(target=self.get_torrent_file)
                 self.get_torrent_file_loop.start()
+            else:
+                make_tracker_request(self.info_hash, args.port, \
+                                                self.peer_id, self.data[b"announce"].decode(),"started")
 
 
     def stop(self):

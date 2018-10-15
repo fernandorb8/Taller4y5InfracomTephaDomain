@@ -105,8 +105,12 @@ def handle_client_connection(client_address,i):
 while True:
     bytesAddressPair,address = UDPServerSocket.recvfrom(args.buffsize)
     print('Accepted connection from {}:{}'.format(address[0], address[1]))
+    print('address:')
+    print(address)
+    print('message')
+    print(bytesAddressPair)
+        
     clients.append(address)
-
     if args.nclients == len(clients):
         i=1
         for client_address in clients:

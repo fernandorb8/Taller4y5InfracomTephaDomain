@@ -1,7 +1,0 @@
-Sun Oct 14 20:18:43 2018
-Connecting to 192.168.56.1:9000
-Buffsize 65536
------------------
-execution time: 1.499889612197876 s
-send_state: error, Problems receiving the data. packets send= 8 . packets received= 8
------------------

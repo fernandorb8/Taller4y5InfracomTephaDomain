@@ -264,9 +264,9 @@ class Torrent():
         log_event(time(), ";".join(["el tiempo de descarga fue",str(time()-start_time)]))
         make_tracker_request(self.info_hash, args.port, self.peer_id, self.data[b"announce"].decode(), "completed")
                 
-        with open(args.out_folder + "/" + self.data[b"info"][b"name"].decode(), "wb") as f:
-            for piece in self.torrent_pieces:
-                f.write(piece.bytes)
+#         with open(args.out_folder + "/" + self.data[b"info"][b"name"].decode(), "wb") as f:
+#             for piece in self.torrent_pieces:
+#                 f.write(piece.bytes)
                 
     def get_pieces_from_peer(self, peer_sock: socket.socket):
         """ Get all possible pieces from peer. """

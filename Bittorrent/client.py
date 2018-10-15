@@ -239,18 +239,12 @@ class Torrent():
     def get_torrent_file(self):
         """ Get the file in the torrent using the torrent info. """
         start_time = time()
-        tracker_response = make_tracker_request(self.info_hash, args.port, \
+        make_tracker_request(self.info_hash, args.port, \
                                                 self.peer_id, self.data[b"announce"].decode(),"started")
+        self.active_peers = {}
         while not self.torrent_donwloaded:       
             
-            tracker_response = make_tracker_request(self.info_hash, args.port, \
-                                                self.peer_id, self.data[b"announce"].decode())     
-        
-            peers = tracker_response[b"peers"]
-            peers = decode_expanded_peers(peers)
-            self.active_peers = {}
-            
-            for peer in peers:
+            for peer in self.peers:
                 if peer[2] != self.peer_id:
                     if peer[2] not in self.active_peers:
                     
@@ -266,6 +260,8 @@ class Torrent():
             
             for key in self.active_peers:
                 self.active_peers[key].join()
+                
+            
         log_event(time(), ";".join(["el tiempo de descarga fue",str(time()-start_time)]))
         make_tracker_request(self.info_hash, args.port, self.peer_id, self.data[b"announce"].decode(), "completed")
                 

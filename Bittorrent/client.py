@@ -241,7 +241,10 @@ class Torrent():
         start_time = time()
         tracker_response = make_tracker_request(self.info_hash, args.port, \
                                                 self.peer_id, self.data[b"announce"].decode(),"started")
-        while not self.torrent_donwloaded:            
+        while not self.torrent_donwloaded:       
+            
+            tracker_response = make_tracker_request(self.info_hash, args.port, \
+                                                self.peer_id, self.data[b"announce"].decode())     
         
             peers = tracker_response[b"peers"]
             peers = decode_expanded_peers(peers)

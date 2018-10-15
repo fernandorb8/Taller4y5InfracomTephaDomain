@@ -1,0 +1,2280 @@
+Mon Oct 15 15:34:59 2018
+Listening on 172.24.101.207:6883
+-----------------
+execution time: 1539635699.6184561 s
+se sirve el .torrent;myfile_250.torrent
+-----------------
+execution time: 1539635704.329208 s
+Accepted connection from 172.24.101.211:44234
+-----------------
+execution time: 1539635704.3466766 s
+Accepted connection from 172.24.101.209:59766
+-----------------
+execution time: 1539635704.36224 s
+Accepted connection from 172.24.101.212:46894
+-----------------
+execution time: 1539635704.367437 s
+se envia la pieza;0;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.3688476 s
+Accepted connection from 172.24.101.208:38576
+-----------------
+execution time: 1539635704.3823867 s
+se envia la pieza;1;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.3946278 s
+se envia la pieza;1;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.397518 s
+se envia la pieza;0;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.4145527 s
+se envia la pieza;1;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.4240658 s
+se envia la pieza;2;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.4374316 s
+se envia la pieza;1;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.4439197 s
+se envia la pieza;2;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.4453366 s
+se envia la pieza;2;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.450548 s
+se envia la pieza;3;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.480069 s
+Accepted connection from 172.24.101.210:60060
+-----------------
+execution time: 1539635704.4833171 s
+se envia la pieza;2;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.4971926 s
+se envia la pieza;4;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.4974873 s
+se envia la pieza;3;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.4993007 s
+se envia la pieza;3;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.5160918 s
+se envia la pieza;3;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.5247476 s
+se envia la pieza;5;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.547003 s
+se envia la pieza;4;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.5482092 s
+se envia la pieza;4;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.5512764 s
+se envia la pieza;4;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.5588496 s
+se envia la pieza;6;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.563926 s
+se envia la pieza;2;al cliente;172.24.101.210
+-----------------
+execution time: 1539635704.5752392 s
+se envia la pieza;5;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.610111 s
+se envia la pieza;7;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.6117961 s
+se envia la pieza;5;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.6160944 s
+se envia la pieza;6;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.6162527 s
+se envia la pieza;5;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.643934 s
+se envia la pieza;8;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.6543324 s
+se envia la pieza;6;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.6558895 s
+se envia la pieza;6;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.6564205 s
+se envia la pieza;3;al cliente;172.24.101.210
+-----------------
+execution time: 1539635704.675978 s
+se envia la pieza;7;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.6814678 s
+se envia la pieza;9;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.68822 s
+se envia la pieza;7;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.6909912 s
+se envia la pieza;7;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.7168784 s
+se envia la pieza;8;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.726341 s
+se envia la pieza;4;al cliente;172.24.101.210
+-----------------
+execution time: 1539635704.7304726 s
+se envia la pieza;8;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.7314167 s
+se envia la pieza;10;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.7353323 s
+se envia la pieza;8;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.7427394 s
+se envia la pieza;9;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.7661912 s
+se envia la pieza;9;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.7792518 s
+se envia la pieza;11;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.7853642 s
+se envia la pieza;11;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.7869983 s
+se envia la pieza;5;al cliente;172.24.101.210
+-----------------
+execution time: 1539635704.8003824 s
+se envia la pieza;9;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.8028085 s
+se envia la pieza;10;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.8133209 s
+se envia la pieza;12;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.8226147 s
+se envia la pieza;12;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.8351388 s
+se envia la pieza;10;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.8406844 s
+se envia la pieza;6;al cliente;172.24.101.210
+-----------------
+execution time: 1539635704.8486795 s
+se envia la pieza;13;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.8512957 s
+se envia la pieza;11;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.8667645 s
+se envia la pieza;13;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.8791122 s
+se envia la pieza;11;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.8862865 s
+se envia la pieza;14;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.8957868 s
+se envia la pieza;7;al cliente;172.24.101.210
+-----------------
+execution time: 1539635704.9073386 s
+se envia la pieza;12;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.912428 s
+se envia la pieza;14;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.93542 s
+se envia la pieza;12;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.9363124 s
+se envia la pieza;15;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.9454255 s
+se envia la pieza;13;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.9490821 s
+se envia la pieza;8;al cliente;172.24.101.210
+-----------------
+execution time: 1539635704.952952 s
+se envia la pieza;15;al cliente;172.24.101.211
+-----------------
+execution time: 1539635704.9743028 s
+se envia la pieza;13;al cliente;172.24.101.209
+-----------------
+execution time: 1539635704.985218 s
+se envia la pieza;16;al cliente;172.24.101.212
+-----------------
+execution time: 1539635704.9872055 s
+se envia la pieza;14;al cliente;172.24.101.208
+-----------------
+execution time: 1539635704.9991717 s
+se envia la pieza;9;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.0058982 s
+se envia la pieza;16;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.012955 s
+se envia la pieza;14;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.016978 s
+se envia la pieza;17;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.0245476 s
+se envia la pieza;15;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.0460725 s
+se envia la pieza;10;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.0475569 s
+se envia la pieza;17;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.057589 s
+se envia la pieza;18;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.0605328 s
+se envia la pieza;15;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.0737762 s
+se envia la pieza;17;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.0853271 s
+se envia la pieza;11;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.090488 s
+se envia la pieza;18;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.1022797 s
+se envia la pieza;19;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.1039727 s
+se envia la pieza;16;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.1175785 s
+se envia la pieza;19;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.1316626 s
+se envia la pieza;12;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.135663 s
+se envia la pieza;19;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.1433516 s
+se envia la pieza;20;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.149964 s
+se envia la pieza;17;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.173418 s
+se envia la pieza;21;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.1881888 s
+se envia la pieza;13;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.1894417 s
+se envia la pieza;21;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.1918643 s
+se envia la pieza;20;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.2055352 s
+se envia la pieza;22;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.2075272 s
+se envia la pieza;18;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.2203786 s
+se envia la pieza;14;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.2274344 s
+se envia la pieza;22;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.2357666 s
+se envia la pieza;21;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.246247 s
+se envia la pieza;23;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.2510762 s
+se envia la pieza;19;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.2751358 s
+se envia la pieza;23;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.2796323 s
+se envia la pieza;22;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.2850606 s
+se envia la pieza;15;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.2872887 s
+se envia la pieza;24;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.2892687 s
+se envia la pieza;21;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.3157785 s
+se envia la pieza;24;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.3202975 s
+se envia la pieza;23;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.3225229 s
+se envia la pieza;26;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.3298273 s
+se envia la pieza;23;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.336876 s
+se envia la pieza;17;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.3578093 s
+se envia la pieza;25;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.3693056 s
+se envia la pieza;24;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.3734117 s
+se envia la pieza;27;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.3799677 s
+se envia la pieza;25;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.3904285 s
+se envia la pieza;20;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.396559 s
+se envia la pieza;26;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.4097402 s
+se envia la pieza;25;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.421798 s
+se envia la pieza;28;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.4232595 s
+se envia la pieza;27;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.4371343 s
+se envia la pieza;23;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.4441965 s
+se envia la pieza;27;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.45775 s
+se envia la pieza;26;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.4610276 s
+se envia la pieza;28;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.4659986 s
+se envia la pieza;29;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.4820101 s
+se envia la pieza;28;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.4993691 s
+se envia la pieza;30;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.5020478 s
+se envia la pieza;29;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.5082483 s
+se envia la pieza;26;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.5111732 s
+se envia la pieza;29;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.5350938 s
+se envia la pieza;31;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.541144 s
+se envia la pieza;30;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.5415595 s
+se envia la pieza;30;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.5592597 s
+se envia la pieza;32;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.573665 s
+se envia la pieza;29;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.5741181 s
+se envia la pieza;31;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.5802245 s
+se envia la pieza;31;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.5858388 s
+se envia la pieza;33;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.5990076 s
+se envia la pieza;32;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.6232994 s
+se envia la pieza;32;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.629611 s
+se envia la pieza;33;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.6311734 s
+se envia la pieza;30;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.6334627 s
+se envia la pieza;34;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.6476293 s
+se envia la pieza;33;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.6688263 s
+se envia la pieza;34;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.669957 s
+se envia la pieza;35;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.676823 s
+se envia la pieza;34;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.683204 s
+se envia la pieza;33;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.7069247 s
+se envia la pieza;36;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.7131615 s
+se envia la pieza;35;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.7158148 s
+se envia la pieza;35;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.7197585 s
+se envia la pieza;28;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.735009 s
+se envia la pieza;37;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.7481549 s
+se envia la pieza;36;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.760873 s
+se envia la pieza;36;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.7625968 s
+se envia la pieza;38;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.7776318 s
+se envia la pieza;38;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.7897873 s
+se envia la pieza;29;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.7942839 s
+se envia la pieza;39;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.7998192 s
+se envia la pieza;37;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.8029947 s
+se envia la pieza;39;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.820392 s
+se envia la pieza;40;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.8344045 s
+se envia la pieza;40;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.8502147 s
+se envia la pieza;38;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.8506944 s
+se envia la pieza;41;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.8560557 s
+se envia la pieza;31;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.863082 s
+se envia la pieza;41;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.8852122 s
+se envia la pieza;39;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.8870184 s
+se envia la pieza;42;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.8871758 s
+se envia la pieza;42;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.9204576 s
+se envia la pieza;43;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.9258728 s
+se envia la pieza;43;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.9278316 s
+se envia la pieza;40;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.9446323 s
+se envia la pieza;33;al cliente;172.24.101.211
+-----------------
+execution time: 1539635705.9493926 s
+se envia la pieza;44;al cliente;172.24.101.209
+-----------------
+execution time: 1539635705.9499068 s
+se envia la pieza;39;al cliente;172.24.101.210
+-----------------
+execution time: 1539635705.9527307 s
+se envia la pieza;44;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.965755 s
+se envia la pieza;41;al cliente;172.24.101.212
+-----------------
+execution time: 1539635705.9827194 s
+se envia la pieza;45;al cliente;172.24.101.208
+-----------------
+execution time: 1539635705.9859023 s
+se envia la pieza;45;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.0077448 s
+se envia la pieza;42;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.0099516 s
+se envia la pieza;46;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.0138483 s
+se envia la pieza;46;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.0390978 s
+se envia la pieza;47;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.040281 s
+se envia la pieza;34;al cliente;172.24.101.211
+-----------------
+execution time: 1539635706.040884 s
+se envia la pieza;47;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.054777 s
+se envia la pieza;43;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.0590115 s
+se envia la pieza;43;al cliente;172.24.101.210
+-----------------
+execution time: 1539635706.0648546 s
+se envia la pieza;48;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.0742276 s
+se envia la pieza;48;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.0908937 s
+se envia la pieza;49;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.0976932 s
+se envia la pieza;49;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.1150877 s
+se envia la pieza;44;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.1192172 s
+se envia la pieza;50;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.125364 s
+se envia la pieza;50;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.1416824 s
+se envia la pieza;51;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.160678 s
+se envia la pieza;51;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.1698337 s
+se envia la pieza;47;al cliente;172.24.101.210
+-----------------
+execution time: 1539635706.1731722 s
+se envia la pieza;36;al cliente;172.24.101.211
+-----------------
+execution time: 1539635706.175123 s
+se envia la pieza;52;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.1796048 s
+se envia la pieza;45;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.1936498 s
+se envia la pieza;52;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.2015743 s
+se envia la pieza;53;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.2212443 s
+se envia la pieza;53;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.2298408 s
+se envia la pieza;54;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.2433498 s
+se envia la pieza;46;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.2559457 s
+se envia la pieza;37;al cliente;172.24.101.211
+-----------------
+execution time: 1539635706.257295 s
+se envia la pieza;54;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.2581592 s
+se envia la pieza;55;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.2835844 s
+se envia la pieza;56;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.2929842 s
+se envia la pieza;51;al cliente;172.24.101.210
+-----------------
+execution time: 1539635706.2940154 s
+se envia la pieza;56;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.297941 s
+se envia la pieza;47;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.3091917 s
+se envia la pieza;57;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.322969 s
+se envia la pieza;57;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.331473 s
+se envia la pieza;58;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.3459377 s
+se envia la pieza;58;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.350049 s
+se envia la pieza;42;al cliente;172.24.101.211
+-----------------
+execution time: 1539635706.357274 s
+se envia la pieza;59;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.3769195 s
+se envia la pieza;59;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.3806412 s
+se envia la pieza;48;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.3811574 s
+se envia la pieza;60;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.4031641 s
+se envia la pieza;60;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.409224 s
+se envia la pieza;54;al cliente;172.24.101.210
+-----------------
+execution time: 1539635706.4097662 s
+se envia la pieza;61;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.4255679 s
+se envia la pieza;61;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.4415147 s
+se envia la pieza;62;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.4472635 s
+se envia la pieza;46;al cliente;172.24.101.211
+-----------------
+execution time: 1539635706.4550922 s
+se envia la pieza;49;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.455635 s
+se envia la pieza;62;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.4634588 s
+se envia la pieza;64;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.483415 s
+se envia la pieza;63;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.4911966 s
+se envia la pieza;65;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.5137095 s
+se envia la pieza;64;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.5212543 s
+se envia la pieza;66;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.5297718 s
+se envia la pieza;50;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.5369368 s
+se envia la pieza;65;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.5417762 s
+se envia la pieza;51;al cliente;172.24.101.211
+-----------------
+execution time: 1539635706.5504305 s
+se envia la pieza;67;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.5662234 s
+se envia la pieza;66;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.5709255 s
+se envia la pieza;68;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.5942342 s
+se envia la pieza;67;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.5976126 s
+se envia la pieza;69;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.6017482 s
+se envia la pieza;51;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.613234 s
+se envia la pieza;68;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.6273308 s
+se envia la pieza;70;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.6366029 s
+se envia la pieza;54;al cliente;172.24.101.211
+-----------------
+execution time: 1539635706.6405098 s
+se envia la pieza;69;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.6471326 s
+se envia la pieza;71;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.6611643 s
+se envia la pieza;70;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.6743314 s
+se envia la pieza;72;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.6855464 s
+se envia la pieza;52;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.68752 s
+se envia la pieza;71;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.6973803 s
+se envia la pieza;73;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.702454 s
+se envia la pieza;72;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.7253242 s
+se envia la pieza;62;al cliente;172.24.101.210
+-----------------
+execution time: 1539635706.7257957 s
+se envia la pieza;74;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.7302146 s
+se envia la pieza;58;al cliente;172.24.101.211
+-----------------
+execution time: 1539635706.7373176 s
+se envia la pieza;74;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.7484353 s
+se envia la pieza;75;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.755143 s
+se envia la pieza;53;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.7627904 s
+se envia la pieza;75;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.7696602 s
+se envia la pieza;76;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.7893624 s
+se envia la pieza;76;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.798607 s
+se envia la pieza;77;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.8141057 s
+se envia la pieza;77;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.8231103 s
+se envia la pieza;78;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.8277895 s
+se envia la pieza;65;al cliente;172.24.101.210
+-----------------
+execution time: 1539635706.8303864 s
+se envia la pieza;55;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.8359272 s
+se envia la pieza;78;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.851591 s
+se envia la pieza;79;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.857911 s
+se envia la pieza;79;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.8703587 s
+se envia la pieza;62;al cliente;172.24.101.211
+-----------------
+execution time: 1539635706.884525 s
+se envia la pieza;80;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.8852282 s
+se envia la pieza;80;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.9105535 s
+se envia la pieza;68;al cliente;172.24.101.210
+-----------------
+execution time: 1539635706.9161484 s
+se envia la pieza;81;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.924415 s
+se envia la pieza;58;al cliente;172.24.101.212
+-----------------
+execution time: 1539635706.9249268 s
+se envia la pieza;81;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.938433 s
+se envia la pieza;82;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.9548085 s
+se envia la pieza;82;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.9705653 s
+se envia la pieza;83;al cliente;172.24.101.209
+-----------------
+execution time: 1539635706.9745295 s
+se envia la pieza;83;al cliente;172.24.101.208
+-----------------
+execution time: 1539635706.9939084 s
+se envia la pieza;84;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.008576 s
+se envia la pieza;84;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.0149655 s
+se envia la pieza;85;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.0200145 s
+se envia la pieza;72;al cliente;172.24.101.210
+-----------------
+execution time: 1539635707.0209422 s
+se envia la pieza;62;al cliente;172.24.101.212
+-----------------
+execution time: 1539635707.0299249 s
+se envia la pieza;85;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.0382555 s
+se envia la pieza;86;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.0564969 s
+se envia la pieza;86;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.0616834 s
+se envia la pieza;87;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.0822043 s
+se envia la pieza;87;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.085739 s
+se envia la pieza;88;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.101202 s
+se envia la pieza;88;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.1116843 s
+se envia la pieza;89;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.1252275 s
+se envia la pieza;89;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.1385343 s
+se envia la pieza;68;al cliente;172.24.101.212
+-----------------
+execution time: 1539635707.1422243 s
+se envia la pieza;90;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.1456647 s
+se envia la pieza;90;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.1557844 s
+se envia la pieza;77;al cliente;172.24.101.210
+-----------------
+execution time: 1539635707.1611779 s
+se envia la pieza;91;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.170219 s
+se envia la pieza;71;al cliente;172.24.101.211
+-----------------
+execution time: 1539635707.1754546 s
+se envia la pieza;91;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.1804576 s
+se envia la pieza;92;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.2018704 s
+se envia la pieza;92;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.2058167 s
+se envia la pieza;93;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.223194 s
+se envia la pieza;93;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.234842 s
+se envia la pieza;94;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.2504132 s
+se envia la pieza;94;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.2579367 s
+se envia la pieza;95;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.2631505 s
+se envia la pieza;71;al cliente;172.24.101.212
+-----------------
+execution time: 1539635707.270131 s
+se envia la pieza;81;al cliente;172.24.101.210
+-----------------
+execution time: 1539635707.2730985 s
+se envia la pieza;95;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.2791257 s
+se envia la pieza;96;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.3042157 s
+se envia la pieza;97;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.3047137 s
+se envia la pieza;96;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.3369439 s
+se envia la pieza;98;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.3388662 s
+se envia la pieza;97;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.3624036 s
+se envia la pieza;99;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.3669982 s
+se envia la pieza;98;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.3718717 s
+se envia la pieza;74;al cliente;172.24.101.212
+-----------------
+execution time: 1539635707.3814003 s
+se envia la pieza;100;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.3869185 s
+se envia la pieza;85;al cliente;172.24.101.210
+-----------------
+execution time: 1539635707.393149 s
+se envia la pieza;99;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.4136696 s
+se envia la pieza;101;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.4148462 s
+se envia la pieza;100;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.4379 s
+se envia la pieza;102;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.4465718 s
+se envia la pieza;101;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.4670742 s
+se envia la pieza;103;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.4737568 s
+se envia la pieza;102;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.4809682 s
+se envia la pieza;77;al cliente;172.24.101.212
+-----------------
+execution time: 1539635707.48766 s
+se envia la pieza;104;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.4934096 s
+se envia la pieza;103;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.510392 s
+se envia la pieza;105;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.5166314 s
+se envia la pieza;89;al cliente;172.24.101.210
+-----------------
+execution time: 1539635707.5184999 s
+se envia la pieza;80;al cliente;172.24.101.211
+-----------------
+execution time: 1539635707.5201035 s
+se envia la pieza;104;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.534307 s
+se envia la pieza;106;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.5490358 s
+se envia la pieza;105;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.5530238 s
+se envia la pieza;107;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.5753934 s
+se envia la pieza;106;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.5814946 s
+se envia la pieza;108;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.5878663 s
+se envia la pieza;80;al cliente;172.24.101.212
+-----------------
+execution time: 1539635707.5995164 s
+se envia la pieza;107;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.6127517 s
+se envia la pieza;109;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.626867 s
+se envia la pieza;108;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.6333427 s
+se envia la pieza;110;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.6475973 s
+se envia la pieza;109;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.6594446 s
+se envia la pieza;111;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.6757662 s
+se envia la pieza;110;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.678088 s
+se envia la pieza;85;al cliente;172.24.101.211
+-----------------
+execution time: 1539635707.6831224 s
+se envia la pieza;112;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.6904738 s
+se envia la pieza;84;al cliente;172.24.101.212
+-----------------
+execution time: 1539635707.6988459 s
+se envia la pieza;95;al cliente;172.24.101.210
+-----------------
+execution time: 1539635707.7064633 s
+se envia la pieza;111;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.707173 s
+se envia la pieza;113;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.7393527 s
+se envia la pieza;112;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.7452676 s
+se envia la pieza;114;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.7651458 s
+se envia la pieza;114;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.7715573 s
+se envia la pieza;115;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.797399 s
+se envia la pieza;115;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.8001351 s
+se envia la pieza;89;al cliente;172.24.101.212
+-----------------
+execution time: 1539635707.802374 s
+se envia la pieza;116;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.8248239 s
+se envia la pieza;116;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.8290606 s
+se envia la pieza;117;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.8307297 s
+se envia la pieza;88;al cliente;172.24.101.211
+-----------------
+execution time: 1539635707.8465154 s
+se envia la pieza;99;al cliente;172.24.101.210
+-----------------
+execution time: 1539635707.8499599 s
+se envia la pieza;117;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.8558798 s
+se envia la pieza;118;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.878575 s
+se envia la pieza;118;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.8839474 s
+se envia la pieza;121;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.906159 s
+se envia la pieza;119;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.9119847 s
+se envia la pieza;122;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.9143195 s
+se envia la pieza;95;al cliente;172.24.101.212
+-----------------
+execution time: 1539635707.9341717 s
+se envia la pieza;120;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.9374194 s
+se envia la pieza;123;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.9472175 s
+se envia la pieza;92;al cliente;172.24.101.211
+-----------------
+execution time: 1539635707.9592888 s
+se envia la pieza;121;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.9635785 s
+se envia la pieza;124;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.9860308 s
+se envia la pieza;122;al cliente;172.24.101.208
+-----------------
+execution time: 1539635707.9919567 s
+se envia la pieza;125;al cliente;172.24.101.209
+-----------------
+execution time: 1539635707.9939299 s
+se envia la pieza;105;al cliente;172.24.101.210
+-----------------
+execution time: 1539635708.0074723 s
+se envia la pieza;123;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.021677 s
+se envia la pieza;127;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.0294812 s
+se envia la pieza;125;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.0372357 s
+se envia la pieza;100;al cliente;172.24.101.212
+-----------------
+execution time: 1539635708.052221 s
+se envia la pieza;128;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.058037 s
+se envia la pieza;126;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.060787 s
+se envia la pieza;97;al cliente;172.24.101.211
+-----------------
+execution time: 1539635708.0736387 s
+se envia la pieza;129;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.0782213 s
+se envia la pieza;127;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.1044781 s
+se envia la pieza;128;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.1050963 s
+se envia la pieza;130;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.1342628 s
+se envia la pieza;131;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.1351724 s
+se envia la pieza;108;al cliente;172.24.101.210
+-----------------
+execution time: 1539635708.135611 s
+se envia la pieza;129;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.1390429 s
+se envia la pieza;105;al cliente;172.24.101.212
+-----------------
+execution time: 1539635708.1598215 s
+se envia la pieza;132;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.1696064 s
+se envia la pieza;130;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.1830518 s
+se envia la pieza;133;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.189474 s
+se envia la pieza;105;al cliente;172.24.101.211
+-----------------
+execution time: 1539635708.190456 s
+se envia la pieza;131;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.205715 s
+se envia la pieza;134;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.2174842 s
+se envia la pieza;132;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.2299001 s
+se envia la pieza;135;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.239505 s
+se envia la pieza;133;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.240115 s
+se envia la pieza;110;al cliente;172.24.101.212
+-----------------
+execution time: 1539635708.2615192 s
+se envia la pieza;134;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.2620301 s
+se envia la pieza;136;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.286614 s
+se envia la pieza;111;al cliente;172.24.101.210
+-----------------
+execution time: 1539635708.292037 s
+se envia la pieza;137;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.2946858 s
+se envia la pieza;135;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.315208 s
+se envia la pieza;108;al cliente;172.24.101.211
+-----------------
+execution time: 1539635708.3178134 s
+se envia la pieza;138;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.332295 s
+se envia la pieza;136;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.3428507 s
+se envia la pieza;139;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.3497374 s
+se envia la pieza;112;al cliente;172.24.101.212
+-----------------
+execution time: 1539635708.3551278 s
+se envia la pieza;137;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.3643873 s
+se envia la pieza;140;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.3850563 s
+se envia la pieza;141;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.3863049 s
+se envia la pieza;138;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.4078298 s
+se envia la pieza;142;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.4152036 s
+se envia la pieza;139;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.41971 s
+se envia la pieza;114;al cliente;172.24.101.210
+-----------------
+execution time: 1539635708.4312687 s
+se envia la pieza;143;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.4408307 s
+se envia la pieza;140;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.460029 s
+se envia la pieza;144;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.4605584 s
+se envia la pieza;113;al cliente;172.24.101.211
+-----------------
+execution time: 1539635708.4644506 s
+se envia la pieza;116;al cliente;172.24.101.212
+-----------------
+execution time: 1539635708.4667177 s
+se envia la pieza;141;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.4822886 s
+se envia la pieza;145;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.4940195 s
+se envia la pieza;142;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.512114 s
+se envia la pieza;146;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.518068 s
+se envia la pieza;143;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.5364223 s
+se envia la pieza;147;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.5389645 s
+se envia la pieza;144;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.5486112 s
+se envia la pieza;118;al cliente;172.24.101.210
+-----------------
+execution time: 1539635708.565377 s
+se envia la pieza;148;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.568465 s
+se envia la pieza;145;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.5818925 s
+se envia la pieza;118;al cliente;172.24.101.211
+-----------------
+execution time: 1539635708.5944533 s
+se envia la pieza;149;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.5976064 s
+se envia la pieza;146;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.6043434 s
+se envia la pieza;120;al cliente;172.24.101.212
+-----------------
+execution time: 1539635708.6220348 s
+se envia la pieza;150;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.627278 s
+se envia la pieza;147;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.643936 s
+se envia la pieza;151;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.6510894 s
+se envia la pieza;148;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.674337 s
+se envia la pieza;120;al cliente;172.24.101.210
+-----------------
+execution time: 1539635708.6748507 s
+se envia la pieza;149;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.6754038 s
+se envia la pieza;152;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.6895304 s
+se envia la pieza;119;al cliente;172.24.101.211
+-----------------
+execution time: 1539635708.7023084 s
+se envia la pieza;150;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.7052176 s
+se envia la pieza;153;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.726115 s
+se envia la pieza;154;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.729736 s
+se envia la pieza;151;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.75719 s
+se envia la pieza;155;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.7670333 s
+se envia la pieza;123;al cliente;172.24.101.212
+-----------------
+execution time: 1539635708.7705247 s
+se envia la pieza;152;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.7891405 s
+se envia la pieza;157;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.7939594 s
+se envia la pieza;154;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.8041048 s
+se envia la pieza;124;al cliente;172.24.101.211
+-----------------
+execution time: 1539635708.82125 s
+se envia la pieza;124;al cliente;172.24.101.210
+-----------------
+execution time: 1539635708.8234098 s
+se envia la pieza;158;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.8343303 s
+se envia la pieza;155;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.847592 s
+se envia la pieza;159;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.8676624 s
+se envia la pieza;156;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.8704593 s
+se envia la pieza;160;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.8789604 s
+se envia la pieza;127;al cliente;172.24.101.212
+-----------------
+execution time: 1539635708.8978257 s
+se envia la pieza;159;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.9002018 s
+se envia la pieza;161;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.9029303 s
+se envia la pieza;127;al cliente;172.24.101.211
+-----------------
+execution time: 1539635708.9300334 s
+se envia la pieza;162;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.9343836 s
+se envia la pieza;160;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.9603658 s
+se envia la pieza;163;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.9619088 s
+se envia la pieza;129;al cliente;172.24.101.210
+-----------------
+execution time: 1539635708.9658887 s
+se envia la pieza;161;al cliente;172.24.101.208
+-----------------
+execution time: 1539635708.9888132 s
+se envia la pieza;130;al cliente;172.24.101.212
+-----------------
+execution time: 1539635708.9913745 s
+se envia la pieza;164;al cliente;172.24.101.209
+-----------------
+execution time: 1539635708.9942205 s
+se envia la pieza;162;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.0187552 s
+se envia la pieza;165;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.0287154 s
+se envia la pieza;163;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.0445268 s
+se envia la pieza;166;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.0454226 s
+se envia la pieza;131;al cliente;172.24.101.211
+-----------------
+execution time: 1539635709.0507438 s
+se envia la pieza;164;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.0758176 s
+se envia la pieza;167;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.0763254 s
+se envia la pieza;165;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.0864573 s
+se envia la pieza;133;al cliente;172.24.101.212
+-----------------
+execution time: 1539635709.102779 s
+se envia la pieza;166;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.1083055 s
+se envia la pieza;168;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.111895 s
+se envia la pieza;133;al cliente;172.24.101.210
+-----------------
+execution time: 1539635709.1329248 s
+se envia la pieza;167;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.1361625 s
+se envia la pieza;169;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.1544492 s
+se envia la pieza;134;al cliente;172.24.101.211
+-----------------
+execution time: 1539635709.1587522 s
+se envia la pieza;168;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.1660857 s
+se envia la pieza;170;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.1850233 s
+se envia la pieza;169;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.1953585 s
+se envia la pieza;171;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.2090242 s
+se envia la pieza;170;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.2236552 s
+se envia la pieza;137;al cliente;172.24.101.212
+-----------------
+execution time: 1539635709.2291634 s
+se envia la pieza;171;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.2293148 s
+se envia la pieza;172;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.2323492 s
+se envia la pieza;137;al cliente;172.24.101.210
+-----------------
+execution time: 1539635709.2570693 s
+se envia la pieza;173;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.2659144 s
+se envia la pieza;137;al cliente;172.24.101.211
+-----------------
+execution time: 1539635709.268963 s
+se envia la pieza;172;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.2786422 s
+se envia la pieza;174;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.2908976 s
+se envia la pieza;173;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.3091803 s
+se envia la pieza;175;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.3138428 s
+se envia la pieza;174;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.3330705 s
+se envia la pieza;140;al cliente;172.24.101.210
+-----------------
+execution time: 1539635709.3369339 s
+se envia la pieza;176;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.3430488 s
+se envia la pieza;175;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.3573349 s
+se envia la pieza;177;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.3708487 s
+se envia la pieza;176;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.3774748 s
+se envia la pieza;141;al cliente;172.24.101.212
+-----------------
+execution time: 1539635709.3804018 s
+se envia la pieza;178;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.3926942 s
+se envia la pieza;177;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.4088886 s
+se envia la pieza;141;al cliente;172.24.101.211
+-----------------
+execution time: 1539635709.4127467 s
+se envia la pieza;178;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.4137177 s
+se envia la pieza;180;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.4417849 s
+se envia la pieza;143;al cliente;172.24.101.210
+-----------------
+execution time: 1539635709.4449494 s
+se envia la pieza;181;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.4463575 s
+se envia la pieza;179;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.4698658 s
+se envia la pieza;180;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.4737766 s
+se envia la pieza;182;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.493797 s
+se envia la pieza;181;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.501445 s
+se envia la pieza;183;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.5134442 s
+se envia la pieza;182;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.5282018 s
+se envia la pieza;184;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.538674 s
+se envia la pieza;144;al cliente;172.24.101.211
+-----------------
+execution time: 1539635709.5412796 s
+se envia la pieza;183;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.5418365 s
+se envia la pieza;146;al cliente;172.24.101.212
+-----------------
+execution time: 1539635709.5490427 s
+se envia la pieza;185;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.5568545 s
+se envia la pieza;146;al cliente;172.24.101.210
+-----------------
+execution time: 1539635709.5630436 s
+se envia la pieza;184;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.5761795 s
+se envia la pieza;186;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.5819902 s
+se envia la pieza;185;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.6034164 s
+se envia la pieza;187;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.608708 s
+se envia la pieza;186;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.6235502 s
+se envia la pieza;188;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.637186 s
+se envia la pieza;187;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.642454 s
+se envia la pieza;190;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.6636217 s
+se envia la pieza;191;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.6649113 s
+se envia la pieza;188;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.673097 s
+se envia la pieza;150;al cliente;172.24.101.210
+-----------------
+execution time: 1539635709.6954863 s
+se envia la pieza;192;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.6998906 s
+se envia la pieza;148;al cliente;172.24.101.211
+-----------------
+execution time: 1539635709.700388 s
+se envia la pieza;189;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.7017438 s
+se envia la pieza;149;al cliente;172.24.101.212
+-----------------
+execution time: 1539635709.7235205 s
+se envia la pieza;190;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.7242372 s
+se envia la pieza;193;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.7514515 s
+se envia la pieza;195;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.751959 s
+se envia la pieza;191;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.7851365 s
+se envia la pieza;155;al cliente;172.24.101.210
+-----------------
+execution time: 1539635709.785767 s
+se envia la pieza;197;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.7867897 s
+se envia la pieza;192;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.8101223 s
+se envia la pieza;193;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.822386 s
+se envia la pieza;198;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.8383358 s
+se envia la pieza;194;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.8420331 s
+se envia la pieza;153;al cliente;172.24.101.212
+-----------------
+execution time: 1539635709.8470514 s
+se envia la pieza;199;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.8498964 s
+se envia la pieza;152;al cliente;172.24.101.211
+-----------------
+execution time: 1539635709.8600814 s
+se envia la pieza;196;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.8744402 s
+se envia la pieza;200;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.8890193 s
+se envia la pieza;197;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.8985417 s
+se envia la pieza;201;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.9035783 s
+se envia la pieza;158;al cliente;172.24.101.210
+-----------------
+execution time: 1539635709.9118507 s
+se envia la pieza;198;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.9271586 s
+se envia la pieza;202;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.9404593 s
+se envia la pieza;199;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.957084 s
+se envia la pieza;158;al cliente;172.24.101.212
+-----------------
+execution time: 1539635709.9605153 s
+se envia la pieza;203;al cliente;172.24.101.209
+-----------------
+execution time: 1539635709.9694471 s
+se envia la pieza;155;al cliente;172.24.101.211
+-----------------
+execution time: 1539635709.9735537 s
+se envia la pieza;201;al cliente;172.24.101.208
+-----------------
+execution time: 1539635709.9796588 s
+se envia la pieza;204;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.000872 s
+se envia la pieza;160;al cliente;172.24.101.210
+-----------------
+execution time: 1539635710.0014572 s
+se envia la pieza;203;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.0162134 s
+se envia la pieza;205;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.0221415 s
+se envia la pieza;205;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.0472696 s
+se envia la pieza;207;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.0531285 s
+se envia la pieza;161;al cliente;172.24.101.212
+-----------------
+execution time: 1539635710.0585968 s
+se envia la pieza;158;al cliente;172.24.101.211
+-----------------
+execution time: 1539635710.0669553 s
+se envia la pieza;207;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.0872557 s
+se envia la pieza;209;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.0919838 s
+se envia la pieza;208;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.1042178 s
+se envia la pieza;163;al cliente;172.24.101.210
+-----------------
+execution time: 1539635710.115457 s
+se envia la pieza;210;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.12088 s
+se envia la pieza;209;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.1419299 s
+se envia la pieza;159;al cliente;172.24.101.211
+-----------------
+execution time: 1539635710.1425128 s
+se envia la pieza;211;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.1459105 s
+se envia la pieza;163;al cliente;172.24.101.212
+-----------------
+execution time: 1539635710.1477988 s
+se envia la pieza;210;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.1696284 s
+se envia la pieza;213;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.1775544 s
+se envia la pieza;211;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.1955776 s
+se envia la pieza;165;al cliente;172.24.101.210
+-----------------
+execution time: 1539635710.199418 s
+se envia la pieza;212;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.2015014 s
+se envia la pieza;214;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.2301543 s
+se envia la pieza;214;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.2321687 s
+se envia la pieza;215;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.2405748 s
+se envia la pieza;163;al cliente;172.24.101.211
+-----------------
+execution time: 1539635710.2563655 s
+se envia la pieza;215;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.2649798 s
+se envia la pieza;217;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.2786198 s
+se envia la pieza;217;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.2885416 s
+se envia la pieza;167;al cliente;172.24.101.210
+-----------------
+execution time: 1539635710.2890253 s
+se envia la pieza;167;al cliente;172.24.101.212
+-----------------
+execution time: 1539635710.2905016 s
+se envia la pieza;218;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.3073142 s
+se envia la pieza;218;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.3131406 s
+se envia la pieza;219;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.3344007 s
+se envia la pieza;219;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.3400111 s
+se envia la pieza;220;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.3503532 s
+se envia la pieza;167;al cliente;172.24.101.211
+-----------------
+execution time: 1539635710.3627615 s
+se envia la pieza;220;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.3782792 s
+se envia la pieza;221;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.3807778 s
+se envia la pieza;169;al cliente;172.24.101.210
+-----------------
+execution time: 1539635710.395571 s
+se envia la pieza;169;al cliente;172.24.101.212
+-----------------
+execution time: 1539635710.4062395 s
+se envia la pieza;223;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.412654 s
+se envia la pieza;222;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.4201229 s
+se envia la pieza;169;al cliente;172.24.101.211
+-----------------
+execution time: 1539635710.4360967 s
+se envia la pieza;226;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.451614 s
+se envia la pieza;223;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.462273 s
+se envia la pieza;228;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.4714425 s
+se envia la pieza;224;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.473418 s
+se envia la pieza;172;al cliente;172.24.101.210
+-----------------
+execution time: 1539635710.487632 s
+se envia la pieza;229;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.501078 s
+se envia la pieza;172;al cliente;172.24.101.211
+-----------------
+execution time: 1539635710.5060613 s
+se envia la pieza;171;al cliente;172.24.101.212
+-----------------
+execution time: 1539635710.506672 s
+se envia la pieza;225;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.5099916 s
+se envia la pieza;230;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.541102 s
+se envia la pieza;227;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.5428102 s
+se envia la pieza;231;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.578077 s
+se envia la pieza;173;al cliente;172.24.101.210
+-----------------
+execution time: 1539635710.5810535 s
+se envia la pieza;230;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.5835905 s
+se envia la pieza;232;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.584402 s
+se envia la pieza;175;al cliente;172.24.101.211
+-----------------
+execution time: 1539635710.5962915 s
+se envia la pieza;173;al cliente;172.24.101.212
+-----------------
+execution time: 1539635710.6136925 s
+se envia la pieza;233;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.6151059 s
+se envia la pieza;231;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.647987 s
+se envia la pieza;234;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.652802 s
+se envia la pieza;233;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.675462 s
+se envia la pieza;234;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.6760037 s
+se envia la pieza;235;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.685445 s
+se envia la pieza;176;al cliente;172.24.101.210
+-----------------
+execution time: 1539635710.70243 s
+se envia la pieza;236;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.7033756 s
+se envia la pieza;236;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.7164052 s
+se envia la pieza;178;al cliente;172.24.101.211
+-----------------
+execution time: 1539635710.7263443 s
+se envia la pieza;177;al cliente;172.24.101.212
+-----------------
+execution time: 1539635710.7361078 s
+se envia la pieza;237;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.7402956 s
+se envia la pieza;237;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.771385 s
+se envia la pieza;238;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.772731 s
+se envia la pieza;238;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.788975 s
+se envia la pieza;178;al cliente;172.24.101.210
+-----------------
+execution time: 1539635710.8076303 s
+se envia la pieza;239;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.8085635 s
+se envia la pieza;239;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.8206363 s
+se envia la pieza;180;al cliente;172.24.101.212
+-----------------
+execution time: 1539635710.8318002 s
+se envia la pieza;181;al cliente;172.24.101.211
+-----------------
+execution time: 1539635710.8413854 s
+se envia la pieza;240;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.846286 s
+se envia la pieza;241;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.8674076 s
+se envia la pieza;241;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.8744957 s
+se envia la pieza;242;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.8913636 s
+se envia la pieza;242;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.900143 s
+se envia la pieza;243;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.913984 s
+se envia la pieza;243;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.932671 s
+se envia la pieza;247;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.9343905 s
+se envia la pieza;184;al cliente;172.24.101.211
+-----------------
+execution time: 1539635710.941457 s
+se envia la pieza;245;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.946589 s
+se envia la pieza;182;al cliente;172.24.101.210
+-----------------
+execution time: 1539635710.952721 s
+se envia la pieza;184;al cliente;172.24.101.212
+-----------------
+execution time: 1539635710.9544683 s
+se envia la pieza;248;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.9682505 s
+se envia la pieza;246;al cliente;172.24.101.208
+-----------------
+execution time: 1539635710.9856305 s
+se envia la pieza;206;al cliente;172.24.101.209
+-----------------
+execution time: 1539635710.989786 s
+se envia la pieza;249;al cliente;172.24.101.208
+-----------------
+execution time: 1539635711.019957 s
+se envia la pieza;216;al cliente;172.24.101.208
+-----------------
+execution time: 1539635711.0229583 s
+se envia la pieza;244;al cliente;172.24.101.209
+-----------------
+execution time: 1539635711.0266578 s
+se envia la pieza;186;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.0720654 s
+se envia la pieza;186;al cliente;172.24.101.210
+-----------------
+execution time: 1539635711.0760841 s
+se envia la pieza;186;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.098766 s
+se envia la pieza;188;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.152235 s
+se envia la pieza;189;al cliente;172.24.101.210
+-----------------
+execution time: 1539635711.164716 s
+se envia la pieza;189;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.1975086 s
+se envia la pieza;189;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.211128 s
+se envia la pieza;192;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.235399 s
+se envia la pieza;191;al cliente;172.24.101.210
+-----------------
+execution time: 1539635711.2675064 s
+se envia la pieza;191;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.2680733 s
+se envia la pieza;194;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.3290267 s
+se envia la pieza;193;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.3412268 s
+se envia la pieza;195;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.3428292 s
+se envia la pieza;192;al cliente;172.24.101.210
+-----------------
+execution time: 1539635711.3778806 s
+se envia la pieza;195;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.4015725 s
+se envia la pieza;198;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.4372349 s
+se envia la pieza;194;al cliente;172.24.101.210
+-----------------
+execution time: 1539635711.4453168 s
+se envia la pieza;197;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.4757378 s
+se envia la pieza;201;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.506792 s
+se envia la pieza;199;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.5367787 s
+se envia la pieza;202;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.5383775 s
+se envia la pieza;197;al cliente;172.24.101.210
+-----------------
+execution time: 1539635711.5665345 s
+se envia la pieza;201;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.6060975 s
+se envia la pieza;203;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.6337192 s
+se envia la pieza;205;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.6408777 s
+se envia la pieza;199;al cliente;172.24.101.210
+-----------------
+execution time: 1539635711.676972 s
+se envia la pieza;205;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.686512 s
+se envia la pieza;207;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.716955 s
+se envia la pieza;205;al cliente;172.24.101.210
+-----------------
+execution time: 1539635711.7446556 s
+se envia la pieza;208;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.7522678 s
+se envia la pieza;207;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.8038874 s
+se envia la pieza;206;al cliente;172.24.101.210
+-----------------
+execution time: 1539635711.8208058 s
+se envia la pieza;209;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.828811 s
+se envia la pieza;211;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.8823779 s
+se envia la pieza;211;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.9184098 s
+se envia la pieza;213;al cliente;172.24.101.212
+-----------------
+execution time: 1539635711.934466 s
+se envia la pieza;211;al cliente;172.24.101.210
+-----------------
+execution time: 1539635711.9443092 s
+se envia la pieza;235;al cliente;172.24.101.208
+-----------------
+execution time: 1539635711.953559 s
+se envia la pieza;214;al cliente;172.24.101.211
+-----------------
+execution time: 1539635711.9864256 s
+se envia la pieza;216;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.028286 s
+se envia la pieza;214;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.0538478 s
+se envia la pieza;217;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.1193657 s
+se envia la pieza;219;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.1279235 s
+se envia la pieza;217;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.179386 s
+se envia la pieza;221;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.2249513 s
+se envia la pieza;221;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.243275 s
+se envia la pieza;223;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.2744493 s
+se envia la pieza;221;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.3097327 s
+se envia la pieza;225;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.3109467 s
+se envia la pieza;222;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.3790748 s
+se envia la pieza;227;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.3955417 s
+se envia la pieza;225;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.4058554 s
+se envia la pieza;226;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.4527051 s
+se envia la pieza;229;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.4699118 s
+se envia la pieza;226;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.4805996 s
+se envia la pieza;227;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.5386095 s
+se envia la pieza;232;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.5496798 s
+se envia la pieza;230;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.561085 s
+se envia la pieza;230;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.6005552 s
+se envia la pieza;235;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.60217 s
+se envia la pieza;232;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.6321163 s
+se envia la pieza;231;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.6629 s
+se envia la pieza;234;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.665494 s
+se envia la pieza;236;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.7083595 s
+se envia la pieza;236;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.723532 s
+se envia la pieza;237;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.731492 s
+se envia la pieza;238;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.7833395 s
+se envia la pieza;238;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.8027487 s
+se envia la pieza;240;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.80646 s
+se envia la pieza;238;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.8450224 s
+se envia la pieza;241;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.86584 s
+se envia la pieza;242;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.8762465 s
+se envia la pieza;240;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.9106014 s
+se envia la pieza;242;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.9245229 s
+se envia la pieza;243;al cliente;172.24.101.212
+-----------------
+execution time: 1539635712.946393 s
+se envia la pieza;242;al cliente;172.24.101.210
+-----------------
+execution time: 1539635712.973167 s
+se envia la pieza;243;al cliente;172.24.101.211
+-----------------
+execution time: 1539635712.9844286 s
+se envia la pieza;244;al cliente;172.24.101.212
+-----------------
+execution time: 1539635713.0166495 s
+se envia la pieza;246;al cliente;172.24.101.210
+-----------------
+execution time: 1539635713.0441062 s
+se envia la pieza;244;al cliente;172.24.101.211
+-----------------
+execution time: 1539635713.060799 s
+se envia la pieza;249;al cliente;172.24.101.212
+-----------------
+execution time: 1539635713.0901182 s
+se envia la pieza;248;al cliente;172.24.101.210
+-----------------
+execution time: 1539635713.10315 s
+se envia la pieza;248;al cliente;172.24.101.211
+-----------------
+execution time: 1539635714.0429 s
+se envia la pieza;245;al cliente;172.24.101.210
+-----------------

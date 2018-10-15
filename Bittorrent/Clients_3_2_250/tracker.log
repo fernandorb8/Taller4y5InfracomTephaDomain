@@ -1,108 +1,60 @@
-Mon Oct 15 00:51:24 2018
-Listening on 157.253.205.65:None
+Mon Oct 15 16:20:35 2018
+Listening on 157.253.205.65:9010
 -----------------
-execution time: 1539582684.3145206 s
+execution time: 1539638435.7118537 s
 -PY0002-111111111111;contacto de
 -----------------
-execution time: 1539582684.3156927 s
+execution time: 1539638435.7132154 s
 -PY0002-111111111111;la descarga inicia
 -----------------
-execution time: 1539582684.5652854 s
+execution time: 1539638435.727956 s
+-PY0003-111111111111;contacto de
+-----------------
+execution time: 1539638435.7289393 s
+-PY0003-111111111111;la descarga inicia
+-----------------
+execution time: 1539638435.9616919 s
 -PY0001-111111111111;contacto de
 -----------------
-execution time: 1539582684.5663168 s
+execution time: 1539638435.962968 s
 -PY0001-111111111111;la descarga inicia
 -----------------
-execution time: 1539582689.33288 s
+execution time: 1539638440.727829 s
 -PY0002-111111111111;contacto de
 -----------------
-execution time: 1539582689.5734847 s
+execution time: 1539638440.7449527 s
+-PY0003-111111111111;contacto de
+-----------------
+execution time: 1539638440.970138 s
 -PY0001-111111111111;contacto de
 -----------------
-execution time: 1539582692.5454283 s
--PY0002-111111111111;el tiempo de descarga fue;8.229742527008057
------------------
-execution time: 1539582694.3465192 s
+execution time: 1539638445.7439232 s
 -PY0002-111111111111;contacto de
 -----------------
-execution time: 1539582694.5833266 s
+execution time: 1539638445.7585533 s
+-PY0003-111111111111;contacto de
+-----------------
+execution time: 1539638445.9793904 s
 -PY0001-111111111111;contacto de
 -----------------
-execution time: 1539582699.356384 s
+execution time: 1539638446.5629473 s
+-PY0003-111111111111;el tiempo de descarga fue;10.834014415740967
+-----------------
+execution time: 1539638446.5633817 s
+-PY0003-111111111111;es el cliente;1;en terminar
+-----------------
+execution time: 1539638446.575798 s
+-PY0002-111111111111;el tiempo de descarga fue;10.862589359283447
+-----------------
+execution time: 1539638446.5760422 s
+-PY0002-111111111111;es el cliente;2;en terminar
+-----------------
+execution time: 1539638450.7578237 s
 -PY0002-111111111111;contacto de
 -----------------
-execution time: 1539582699.592486 s
--PY0001-111111111111;contacto de
+execution time: 1539638450.7742045 s
+-PY0003-111111111111;contacto de
 -----------------
-execution time: 1539582704.365208 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582704.6010458 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582709.3741138 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582709.6107383 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582714.3835661 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582714.6201615 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582719.3935325 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582719.6292062 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582724.4019432 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582724.6384208 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582729.413115 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582729.6490214 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582734.4232867 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582734.697827 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582739.4327204 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582739.7072258 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582744.4419978 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582744.7163727 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582749.451108 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582749.7255726 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582754.4599361 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582754.7351892 s
--PY0001-111111111111;contacto de
------------------
-execution time: 1539582759.469508 s
--PY0002-111111111111;contacto de
------------------
-execution time: 1539582759.7447467 s
+execution time: 1539638450.9885576 s
 -PY0001-111111111111;contacto de
 -----------------

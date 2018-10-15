@@ -89,8 +89,10 @@ def add_peer(torrents, info_hash, peer_id, ip, port, event):
         if event == "started":
             torrents[peer_id] = time.time()
             log_event(time.time(),";".join([peer_id,"la descarga inicia"]))
-        if event == "completed":
+        elif event == "completed":
             log_event(time.time(),";".join([peer_id,"el tiempo de descarga fue",str(time.time()-torrents[peer_id])]))
+        else:
+            log_event(time.time(),";".join([peer_id,"contacto de"]))
 
 
 def make_peer_list(peer_list):

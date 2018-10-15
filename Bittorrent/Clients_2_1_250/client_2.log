@@ -1,0 +1,1509 @@
+Mon Oct 15 00:46:47 2018
+Listening on 172.24.101.208:6881
+-----------------
+execution time: 1539582407.6242526 s
+se descarga el .torrent;myfile_250.torrent
+-----------------
+execution time: 1539582412.6554759 s
+se solicita la pieza;0;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.6737082 s
+se recibe la pieza;0;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.6738496 s
+se solicita la pieza;1;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.6880267 s
+se recibe la pieza;1;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.6881464 s
+se solicita la pieza;2;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.7012465 s
+se recibe la pieza;2;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.7013643 s
+se solicita la pieza;3;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.7144346 s
+se recibe la pieza;3;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.7145522 s
+se solicita la pieza;4;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.7275743 s
+se recibe la pieza;4;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.7276835 s
+se solicita la pieza;5;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.7408304 s
+se recibe la pieza;5;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.7409487 s
+se solicita la pieza;6;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.7541006 s
+se recibe la pieza;6;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.7542186 s
+se solicita la pieza;7;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.7671735 s
+se recibe la pieza;7;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.767292 s
+se solicita la pieza;8;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.7803226 s
+se recibe la pieza;8;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.7804384 s
+se solicita la pieza;9;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.79347 s
+se recibe la pieza;9;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.793587 s
+se solicita la pieza;10;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.8064837 s
+se recibe la pieza;10;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.8066018 s
+se solicita la pieza;11;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.8195672 s
+se recibe la pieza;11;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.819685 s
+se solicita la pieza;12;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.8327637 s
+se recibe la pieza;12;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.832883 s
+se solicita la pieza;13;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.845766 s
+se recibe la pieza;13;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.8458838 s
+se solicita la pieza;14;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.858814 s
+se recibe la pieza;14;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.8589404 s
+se solicita la pieza;15;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.8718987 s
+se recibe la pieza;15;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.8720171 s
+se solicita la pieza;16;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.884859 s
+se recibe la pieza;16;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.8849802 s
+se solicita la pieza;17;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.8978162 s
+se recibe la pieza;17;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.8979495 s
+se solicita la pieza;18;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.9109004 s
+se recibe la pieza;18;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.9110196 s
+se solicita la pieza;19;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.9239583 s
+se recibe la pieza;19;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.9240701 s
+se solicita la pieza;20;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.9370232 s
+se recibe la pieza;20;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.9371426 s
+se solicita la pieza;21;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.9500039 s
+se recibe la pieza;21;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.9501235 s
+se solicita la pieza;22;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.963089 s
+se recibe la pieza;22;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.9632277 s
+se solicita la pieza;23;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.9761858 s
+se recibe la pieza;23;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.976305 s
+se solicita la pieza;24;al peer;172.24.101.207
+-----------------
+execution time: 1539582412.9891608 s
+se recibe la pieza;24;del peer;172.24.101.207
+-----------------
+execution time: 1539582412.9892907 s
+se solicita la pieza;25;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.002295 s
+se recibe la pieza;25;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.002417 s
+se solicita la pieza;26;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.0152662 s
+se recibe la pieza;26;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.0153785 s
+se solicita la pieza;27;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.0282938 s
+se recibe la pieza;27;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.0284061 s
+se solicita la pieza;28;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.0412943 s
+se recibe la pieza;28;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.0414138 s
+se solicita la pieza;29;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.05434 s
+se recibe la pieza;29;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.05446 s
+se solicita la pieza;30;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.067449 s
+se recibe la pieza;30;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.0675619 s
+se solicita la pieza;31;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.080536 s
+se recibe la pieza;31;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.0806568 s
+se solicita la pieza;32;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.093533 s
+se recibe la pieza;32;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.0936518 s
+se solicita la pieza;33;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.1066325 s
+se recibe la pieza;33;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.1067605 s
+se solicita la pieza;34;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.1197355 s
+se recibe la pieza;34;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.119849 s
+se solicita la pieza;35;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.132919 s
+se recibe la pieza;35;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.1330466 s
+se solicita la pieza;36;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.1459389 s
+se recibe la pieza;36;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.146059 s
+se solicita la pieza;37;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.159032 s
+se recibe la pieza;37;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.159171 s
+se solicita la pieza;38;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.172398 s
+se recibe la pieza;38;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.1725194 s
+se solicita la pieza;39;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.185944 s
+se recibe la pieza;39;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.1860826 s
+se solicita la pieza;40;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.1993747 s
+se recibe la pieza;40;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.1994984 s
+se solicita la pieza;41;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.2123606 s
+se recibe la pieza;41;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.212483 s
+se solicita la pieza;42;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.2253647 s
+se recibe la pieza;42;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.2254863 s
+se solicita la pieza;43;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.2384744 s
+se recibe la pieza;43;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.238596 s
+se solicita la pieza;44;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.2518353 s
+se recibe la pieza;44;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.2519505 s
+se solicita la pieza;45;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.2653627 s
+se recibe la pieza;45;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.265485 s
+se solicita la pieza;46;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.279046 s
+se recibe la pieza;46;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.2791843 s
+se solicita la pieza;47;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.2925327 s
+se recibe la pieza;47;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.2926626 s
+se solicita la pieza;48;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.3054864 s
+se recibe la pieza;48;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.30561 s
+se solicita la pieza;49;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.318615 s
+se recibe la pieza;49;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.3187387 s
+se solicita la pieza;50;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.3316636 s
+se recibe la pieza;50;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.3317785 s
+se solicita la pieza;51;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.3446457 s
+se recibe la pieza;51;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.3447673 s
+se solicita la pieza;52;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.3575776 s
+se recibe la pieza;52;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.3577013 s
+se solicita la pieza;53;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.3706381 s
+se recibe la pieza;53;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.3707619 s
+se solicita la pieza;54;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.383852 s
+se recibe la pieza;54;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.3839903 s
+se solicita la pieza;55;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.39694 s
+se recibe la pieza;55;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.3970673 s
+se solicita la pieza;56;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.4100573 s
+se recibe la pieza;56;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.4101856 s
+se solicita la pieza;57;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.4232392 s
+se recibe la pieza;57;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.4233627 s
+se solicita la pieza;58;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.4361837 s
+se recibe la pieza;58;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.4363077 s
+se solicita la pieza;59;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.4491498 s
+se recibe la pieza;59;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.4492912 s
+se solicita la pieza;60;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.462213 s
+se recibe la pieza;60;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.4623363 s
+se solicita la pieza;61;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.4752579 s
+se recibe la pieza;61;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.4753764 s
+se solicita la pieza;62;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.4902072 s
+se recibe la pieza;62;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.4903347 s
+se solicita la pieza;63;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.503227 s
+se recibe la pieza;63;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.5033443 s
+se solicita la pieza;64;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.5176418 s
+se recibe la pieza;64;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.517774 s
+se solicita la pieza;65;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.5306807 s
+se recibe la pieza;65;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.530813 s
+se solicita la pieza;66;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.5437076 s
+se recibe la pieza;66;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.543833 s
+se solicita la pieza;67;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.5567272 s
+se recibe la pieza;67;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.5568528 s
+se solicita la pieza;68;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.5696807 s
+se recibe la pieza;68;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.5698056 s
+se solicita la pieza;69;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.5827186 s
+se recibe la pieza;69;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.5828443 s
+se solicita la pieza;70;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.59571 s
+se recibe la pieza;70;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.5958273 s
+se solicita la pieza;71;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.608811 s
+se recibe la pieza;71;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.6089349 s
+se solicita la pieza;72;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.621856 s
+se recibe la pieza;72;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.6219957 s
+se solicita la pieza;73;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.6348686 s
+se recibe la pieza;73;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.6349957 s
+se solicita la pieza;74;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.647992 s
+se recibe la pieza;74;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.6481183 s
+se solicita la pieza;75;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.661135 s
+se recibe la pieza;75;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.6612694 s
+se solicita la pieza;76;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.6741304 s
+se recibe la pieza;76;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.674258 s
+se solicita la pieza;77;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.6871498 s
+se recibe la pieza;77;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.6872892 s
+se solicita la pieza;78;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.7001562 s
+se recibe la pieza;78;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.7002757 s
+se solicita la pieza;79;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.7132516 s
+se recibe la pieza;79;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.713377 s
+se solicita la pieza;80;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.726307 s
+se recibe la pieza;80;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.7264342 s
+se solicita la pieza;81;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.7393079 s
+se recibe la pieza;81;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.7394285 s
+se solicita la pieza;82;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.7525775 s
+se recibe la pieza;82;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.752705 s
+se solicita la pieza;83;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.7656155 s
+se recibe la pieza;83;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.7657435 s
+se solicita la pieza;84;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.7786448 s
+se recibe la pieza;84;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.778772 s
+se solicita la pieza;85;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.791649 s
+se recibe la pieza;85;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.7917776 s
+se solicita la pieza;86;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.8046784 s
+se recibe la pieza;86;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.8048067 s
+se solicita la pieza;87;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.8176694 s
+se recibe la pieza;87;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.8177967 s
+se solicita la pieza;88;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.8307085 s
+se recibe la pieza;88;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.8308365 s
+se solicita la pieza;89;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.8438234 s
+se recibe la pieza;89;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.8439534 s
+se solicita la pieza;90;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.8574753 s
+se recibe la pieza;90;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.8576052 s
+se solicita la pieza;91;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.8714657 s
+se recibe la pieza;91;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.8715875 s
+se solicita la pieza;92;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.8848374 s
+se recibe la pieza;92;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.8849676 s
+se solicita la pieza;93;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.8978097 s
+se recibe la pieza;93;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.8979583 s
+se solicita la pieza;94;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.9108841 s
+se recibe la pieza;94;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.9110177 s
+se solicita la pieza;95;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.9237626 s
+se recibe la pieza;95;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.9238846 s
+se solicita la pieza;96;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.937585 s
+se recibe la pieza;96;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.937717 s
+se solicita la pieza;97;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.9510746 s
+se recibe la pieza;97;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.951223 s
+se solicita la pieza;98;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.9645505 s
+se recibe la pieza;98;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.9646814 s
+se solicita la pieza;99;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.9778178 s
+se recibe la pieza;99;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.9779618 s
+se solicita la pieza;100;al peer;172.24.101.207
+-----------------
+execution time: 1539582413.9910204 s
+se recibe la pieza;100;del peer;172.24.101.207
+-----------------
+execution time: 1539582413.9911652 s
+se solicita la pieza;101;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.0041077 s
+se recibe la pieza;101;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.0042307 s
+se solicita la pieza;102;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.017159 s
+se recibe la pieza;102;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.0172927 s
+se solicita la pieza;103;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.0302627 s
+se recibe la pieza;103;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.0303938 s
+se solicita la pieza;104;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.0432496 s
+se recibe la pieza;104;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.0433762 s
+se solicita la pieza;105;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.0561306 s
+se recibe la pieza;105;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.0562546 s
+se solicita la pieza;106;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.0690682 s
+se recibe la pieza;106;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.0691998 s
+se solicita la pieza;107;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.0820808 s
+se recibe la pieza;107;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.0822127 s
+se solicita la pieza;108;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.095103 s
+se recibe la pieza;108;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.0952606 s
+se solicita la pieza;109;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.108071 s
+se recibe la pieza;109;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.108195 s
+se solicita la pieza;110;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.1210785 s
+se recibe la pieza;110;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.1212099 s
+se solicita la pieza;111;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.134288 s
+se recibe la pieza;111;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.1344218 s
+se solicita la pieza;112;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.1472883 s
+se recibe la pieza;112;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.1474123 s
+se solicita la pieza;113;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.160117 s
+se recibe la pieza;113;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.1602678 s
+se solicita la pieza;114;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.1731215 s
+se recibe la pieza;114;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.1732543 s
+se solicita la pieza;115;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.1860297 s
+se recibe la pieza;115;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.1861625 s
+se solicita la pieza;116;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.1990483 s
+se recibe la pieza;116;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.1991985 s
+se solicita la pieza;117;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.2120283 s
+se recibe la pieza;117;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.212154 s
+se solicita la pieza;118;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.2251153 s
+se recibe la pieza;118;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.2252483 s
+se solicita la pieza;119;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.238162 s
+se recibe la pieza;119;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.2383041 s
+se solicita la pieza;120;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.2511704 s
+se recibe la pieza;120;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.2513206 s
+se solicita la pieza;121;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.2642822 s
+se recibe la pieza;121;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.2644167 s
+se solicita la pieza;122;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.2774096 s
+se recibe la pieza;122;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.2775447 s
+se solicita la pieza;123;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.291395 s
+se recibe la pieza;123;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.2915356 s
+se solicita la pieza;124;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.3042042 s
+se recibe la pieza;124;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.3043396 s
+se solicita la pieza;125;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.3170176 s
+se recibe la pieza;125;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.3171523 s
+se solicita la pieza;126;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.3299518 s
+se recibe la pieza;126;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.330087 s
+se solicita la pieza;127;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.342982 s
+se recibe la pieza;127;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.3431168 s
+se solicita la pieza;128;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.3559575 s
+se recibe la pieza;128;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.3560867 s
+se solicita la pieza;129;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.368972 s
+se recibe la pieza;129;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.3691068 s
+se solicita la pieza;130;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.382142 s
+se recibe la pieza;130;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.3822815 s
+se solicita la pieza;131;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.3951507 s
+se recibe la pieza;131;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.3952928 s
+se solicita la pieza;132;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.4081857 s
+se recibe la pieza;132;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.4083135 s
+se solicita la pieza;133;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.4209764 s
+se recibe la pieza;133;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.4211113 s
+se solicita la pieza;134;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.433948 s
+se recibe la pieza;134;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.434085 s
+se solicita la pieza;135;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.4467483 s
+se recibe la pieza;135;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.4468842 s
+se solicita la pieza;136;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.459801 s
+se recibe la pieza;136;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.459929 s
+se solicita la pieza;137;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.472718 s
+se recibe la pieza;137;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.4728544 s
+se solicita la pieza;138;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.485869 s
+se recibe la pieza;138;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.4860203 s
+se solicita la pieza;139;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.4988148 s
+se recibe la pieza;139;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.4989514 s
+se solicita la pieza;140;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.5118246 s
+se recibe la pieza;140;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.5119624 s
+se solicita la pieza;141;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.5248961 s
+se recibe la pieza;141;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.5250342 s
+se solicita la pieza;142;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.5382004 s
+se recibe la pieza;142;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.538341 s
+se solicita la pieza;143;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.551574 s
+se recibe la pieza;143;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.551712 s
+se solicita la pieza;144;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.5654585 s
+se recibe la pieza;144;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.5655959 s
+se solicita la pieza;145;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.5787127 s
+se recibe la pieza;145;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.5788507 s
+se solicita la pieza;146;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.5917747 s
+se recibe la pieza;146;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.5919135 s
+se solicita la pieza;147;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.6046772 s
+se recibe la pieza;147;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.6048162 s
+se solicita la pieza;148;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.6178985 s
+se recibe la pieza;148;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.6180496 s
+se solicita la pieza;149;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.6319373 s
+se recibe la pieza;149;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.63213 s
+se solicita la pieza;150;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.6457074 s
+se recibe la pieza;150;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.645847 s
+se solicita la pieza;151;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.6585972 s
+se recibe la pieza;151;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.6587367 s
+se solicita la pieza;152;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.6716068 s
+se recibe la pieza;152;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.6717374 s
+se solicita la pieza;153;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.684768 s
+se recibe la pieza;153;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.6849084 s
+se solicita la pieza;154;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.6980276 s
+se recibe la pieza;154;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.6981676 s
+se solicita la pieza;155;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.7113574 s
+se recibe la pieza;155;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.7114885 s
+se solicita la pieza;156;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.7247713 s
+se recibe la pieza;156;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.7249157 s
+se solicita la pieza;157;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.7380362 s
+se recibe la pieza;157;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.738183 s
+se solicita la pieza;158;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.7509077 s
+se recibe la pieza;158;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.7510476 s
+se solicita la pieza;159;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.764252 s
+se recibe la pieza;159;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.7643971 s
+se solicita la pieza;160;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.7773783 s
+se recibe la pieza;160;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.7775233 s
+se solicita la pieza;161;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.7903924 s
+se recibe la pieza;161;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.790535 s
+se solicita la pieza;162;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.8033936 s
+se recibe la pieza;162;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.8035343 s
+se solicita la pieza;163;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.8162794 s
+se recibe la pieza;163;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.8164117 s
+se solicita la pieza;164;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.8292406 s
+se recibe la pieza;164;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.8293824 s
+se solicita la pieza;165;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.8422263 s
+se recibe la pieza;165;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.8423681 s
+se solicita la pieza;166;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.8550286 s
+se recibe la pieza;166;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.85517 s
+se solicita la pieza;167;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.8681216 s
+se recibe la pieza;167;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.8682542 s
+se solicita la pieza;168;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.8814359 s
+se recibe la pieza;168;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.8815782 s
+se solicita la pieza;169;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.8945036 s
+se recibe la pieza;169;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.894646 s
+se solicita la pieza;170;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.9077275 s
+se recibe la pieza;170;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.9078622 s
+se solicita la pieza;171;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.9206266 s
+se recibe la pieza;171;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.920769 s
+se solicita la pieza;172;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.9338489 s
+se recibe la pieza;172;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.9340048 s
+se solicita la pieza;173;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.9469063 s
+se recibe la pieza;173;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.9470506 s
+se solicita la pieza;174;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.9598565 s
+se recibe la pieza;174;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.959994 s
+se solicita la pieza;175;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.9727182 s
+se recibe la pieza;175;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.9728613 s
+se solicita la pieza;176;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.9855278 s
+se recibe la pieza;176;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.9856718 s
+se solicita la pieza;177;al peer;172.24.101.207
+-----------------
+execution time: 1539582414.998579 s
+se recibe la pieza;177;del peer;172.24.101.207
+-----------------
+execution time: 1539582414.998723 s
+se solicita la pieza;178;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.0115411 s
+se recibe la pieza;178;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.0116856 s
+se solicita la pieza;179;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.0244405 s
+se recibe la pieza;179;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.0245857 s
+se solicita la pieza;180;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.0373662 s
+se recibe la pieza;180;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.0375185 s
+se solicita la pieza;181;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.0503669 s
+se recibe la pieza;181;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.0505114 s
+se solicita la pieza;182;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.0633783 s
+se recibe la pieza;182;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.063529 s
+se solicita la pieza;183;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.076403 s
+se recibe la pieza;183;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.0765479 s
+se solicita la pieza;184;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.0892992 s
+se recibe la pieza;184;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.0894442 s
+se solicita la pieza;185;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.1020288 s
+se recibe la pieza;185;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.1021733 s
+se solicita la pieza;186;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.1158752 s
+se recibe la pieza;186;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.1160219 s
+se solicita la pieza;187;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.1287696 s
+se recibe la pieza;187;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.1289175 s
+se solicita la pieza;188;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.141453 s
+se recibe la pieza;188;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.1415994 s
+se solicita la pieza;189;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.1542194 s
+se recibe la pieza;189;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.154366 s
+se solicita la pieza;190;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.16694 s
+se recibe la pieza;190;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.1670847 s
+se solicita la pieza;191;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.1800988 s
+se recibe la pieza;191;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.1802456 s
+se solicita la pieza;192;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.192904 s
+se recibe la pieza;192;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.193136 s
+se solicita la pieza;193;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.205722 s
+se recibe la pieza;193;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.2058685 s
+se solicita la pieza;194;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.2186449 s
+se recibe la pieza;194;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.2187936 s
+se solicita la pieza;195;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.2316952 s
+se recibe la pieza;195;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.2318337 s
+se solicita la pieza;196;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.245139 s
+se recibe la pieza;196;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.2452865 s
+se solicita la pieza;197;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.2588425 s
+se recibe la pieza;197;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.2589908 s
+se solicita la pieza;198;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.2725642 s
+se recibe la pieza;198;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.2727134 s
+se solicita la pieza;199;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.285482 s
+se recibe la pieza;199;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.2856307 s
+se solicita la pieza;200;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.2984295 s
+se recibe la pieza;200;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.2985902 s
+se solicita la pieza;201;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.311191 s
+se recibe la pieza;201;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.311355 s
+se solicita la pieza;202;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.3249087 s
+se recibe la pieza;202;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.325058 s
+se solicita la pieza;203;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.3388278 s
+se recibe la pieza;203;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.3389783 s
+se solicita la pieza;204;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.3522215 s
+se recibe la pieza;204;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.3523624 s
+se solicita la pieza;205;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.3650143 s
+se recibe la pieza;205;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.3651648 s
+se solicita la pieza;206;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.378286 s
+se recibe la pieza;206;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.3784373 s
+se solicita la pieza;207;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.3912385 s
+se recibe la pieza;207;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.3913808 s
+se solicita la pieza;208;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.4042485 s
+se recibe la pieza;208;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.4043884 s
+se solicita la pieza;209;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.417083 s
+se recibe la pieza;209;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.4172385 s
+se solicita la pieza;210;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.430161 s
+se recibe la pieza;210;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.43031 s
+se solicita la pieza;211;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.4431589 s
+se recibe la pieza;211;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.4433022 s
+se solicita la pieza;212;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.4561124 s
+se recibe la pieza;212;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.4562612 s
+se solicita la pieza;213;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.4688725 s
+se recibe la pieza;213;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.4690216 s
+se solicita la pieza;214;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.4818428 s
+se recibe la pieza;214;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.4820082 s
+se solicita la pieza;215;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.494546 s
+se recibe la pieza;215;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.4946969 s
+se solicita la pieza;216;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.5075846 s
+se recibe la pieza;216;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.5077271 s
+se solicita la pieza;217;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.5207047 s
+se recibe la pieza;217;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.520855 s
+se solicita la pieza;218;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.533845 s
+se recibe la pieza;218;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.5340087 s
+se solicita la pieza;219;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.5468218 s
+se recibe la pieza;219;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.5469728 s
+se solicita la pieza;220;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.5596836 s
+se recibe la pieza;220;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.5598533 s
+se solicita la pieza;221;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.5725594 s
+se recibe la pieza;221;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.5727124 s
+se solicita la pieza;222;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.5852227 s
+se recibe la pieza;222;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.585386 s
+se solicita la pieza;223;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.5980685 s
+se recibe la pieza;223;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.598214 s
+se solicita la pieza;224;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.6108496 s
+se recibe la pieza;224;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.6109934 s
+se solicita la pieza;225;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.6234324 s
+se recibe la pieza;225;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.6235757 s
+se solicita la pieza;226;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.6360276 s
+se recibe la pieza;226;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.6361632 s
+se solicita la pieza;227;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.648916 s
+se recibe la pieza;227;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.64906 s
+se solicita la pieza;228;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.6614914 s
+se recibe la pieza;228;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.6616335 s
+se solicita la pieza;229;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.6740398 s
+se recibe la pieza;229;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.674182 s
+se solicita la pieza;230;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.6865726 s
+se recibe la pieza;230;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.6867151 s
+se solicita la pieza;231;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.6991322 s
+se recibe la pieza;231;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.6992826 s
+se solicita la pieza;232;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.7120934 s
+se recibe la pieza;232;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.7122393 s
+se solicita la pieza;233;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.7249696 s
+se recibe la pieza;233;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.7251217 s
+se solicita la pieza;234;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.7376232 s
+se recibe la pieza;234;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.7377777 s
+se solicita la pieza;235;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.7503521 s
+se recibe la pieza;235;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.7505052 s
+se solicita la pieza;236;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.7630663 s
+se recibe la pieza;236;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.763231 s
+se solicita la pieza;237;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.7757955 s
+se recibe la pieza;237;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.7759402 s
+se solicita la pieza;238;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.7885363 s
+se recibe la pieza;238;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.7886896 s
+se solicita la pieza;239;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.8013792 s
+se recibe la pieza;239;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.8015325 s
+se solicita la pieza;240;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.8140461 s
+se recibe la pieza;240;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.8142116 s
+se solicita la pieza;241;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.8268104 s
+se recibe la pieza;241;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.8269637 s
+se solicita la pieza;242;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.8395033 s
+se recibe la pieza;242;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.8396602 s
+se solicita la pieza;243;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.8527977 s
+se recibe la pieza;243;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.852945 s
+se solicita la pieza;244;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.8660455 s
+se recibe la pieza;244;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.8662012 s
+se solicita la pieza;245;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.8789647 s
+se recibe la pieza;245;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.8791208 s
+se solicita la pieza;246;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.8919828 s
+se recibe la pieza;246;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.8921328 s
+se solicita la pieza;247;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.9048097 s
+se recibe la pieza;247;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.9049647 s
+se solicita la pieza;248;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.9175024 s
+se recibe la pieza;248;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.917657 s
+se solicita la pieza;249;al peer;172.24.101.207
+-----------------
+execution time: 1539582415.9309766 s
+se recibe la pieza;249;del peer;172.24.101.207
+-----------------
+execution time: 1539582415.9312735 s
+el tiempo de descarga fue;8.30327844619751
+-----------------

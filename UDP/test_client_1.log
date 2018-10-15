@@ -1,7 +1,4 @@
-Sun Oct 14 17:30:56 2018
-Connecting to localhost:9000
+Sun Oct 14 19:26:05 2018
+Connecting to 157.253.205.65:9000
 Buffsize 65536
------------------
-execution time: 1.4552257061004639 s
-send_state: error, Problems receiving the data. packets send= 8 . packets received= 8
 -----------------

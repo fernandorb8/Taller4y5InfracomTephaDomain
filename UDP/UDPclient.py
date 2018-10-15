@@ -4,7 +4,7 @@ import socket , argparse, threading , hashlib , time
 #Arguments for the client
 parser = argparse.ArgumentParser(description='UDP client')
 
-parser.add_argument('--host', type=str, default='157.253.205.65',
+parser.add_argument('--host', type=str, default='192.168.56.1',
                     help='hostname of the server to connect')
 
 parser.add_argument('--port', default=9000,

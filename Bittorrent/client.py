@@ -257,9 +257,6 @@ class Torrent():
                         self.active_peers[peer[2]] = Thread(target = self.get_pieces_from_peer, \
                                                             args = (peer_sock,))
                         self.active_peers[peer[2]].start()
-            
-            for key in self.active_peers:
-                self.active_peers[key].join()
                 
             
         log_event(time(), ";".join(["el tiempo de descarga fue",str(time()-start_time)]))

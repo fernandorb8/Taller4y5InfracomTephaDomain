@@ -1,4 +1,3 @@
-# torrent.py
 # Torrent file related utilities
 #    Written by Joe Salisbury <salisbury.joseph@gmail.com>
 #    Extended by Fernando Reyes Bejarano

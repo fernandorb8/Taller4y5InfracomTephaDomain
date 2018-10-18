@@ -1,0 +1,34 @@
+Mon Oct 15 17:16:46 2018Listening on :9000
+Buffsize 4096
+Number of clients: 10
+-----------------
+execution time: 1539641837.685048 s 
+Start sending video to client 0 
+----------------- 
+execution time: 1539641837.685865 s 
+Start sending video to client 1 
+----------------- 
+execution time: 1539641837.692739 s 
+Start sending video to client 4 
+----------------- 
+execution time: 1539641837.6929421 s 
+Start sending video to client 3 
+----------------- 
+execution time: 1539641837.693024 s 
+Start sending video to client 2 
+----------------- 
+execution time: 1539641837.693305 s 
+Start sending video to client 5 
+----------------- 
+execution time: 1539641837.791633 s 
+Start sending video to client 6 
+----------------- 
+execution time: 1539641837.79184 s 
+Start sending video to client 9 
+----------------- 
+execution time: 1539641837.791894 s 
+Start sending video to client 8 
+----------------- 
+execution time: 1539641837.792253 s 
+Start sending video to client 7 
+----------------- 

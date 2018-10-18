@@ -1,10 +1,14 @@
 # Taller 4 y 5 Infraestructura de comunicaciones
 
-Tepha
+## Sección 5, Grupo 1 
 
-Pegroo Fabián
+### Fabian Alvarez – 201516022 
 
-Ferchito
+### Fernando Reyes – 201112382 
+
+### Stephannie Jimenez – 201423727 
+
+Implementación de los protocolos UDP, TCP y Bitorrent en python
 
 For creating 250Mb and 500Mb files:
 

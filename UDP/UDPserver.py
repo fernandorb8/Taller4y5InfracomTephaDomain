@@ -1,18 +1,18 @@
 # coding=utf-8
-import socket , argparse, threading , hashlib , time, io
+import socket , argparse, threading , hashlib , time, io, select
 
 #arguments
 parser = argparse.ArgumentParser(description='UDP server')
 
-parser.add_argument('--host', type=str, default='192.168.56.1', help='hostname of the server to connect')
+parser.add_argument('--host', type=str, default='', help='hostname of the server to connect')
 
 parser.add_argument('--port', default=9000 , help='port of the server to connect')
 
 parser.add_argument('--buffsize', default=60416, help='size of buffer for the server')
 
-parser.add_argument('--nclients', default=1, help='number of clients the server will manage')
+parser.add_argument('--nclients', default=20 , help='number of clients the server will manage')
 
-parser.add_argument('--out', default='test_udpserver_25_clients_1.log', help='output file for the log')
+parser.add_argument('--out', default='test_udpserver_25_client.log', help='output file for the log')
 
 parser.add_argument('--file', default='data.txt', help='file to be send')
 
@@ -86,7 +86,7 @@ def handle_client_connection(client_address,i):
                 start = time.time()
                 for chunk in fileChunks:
                     handle_socket.send(chunk.encode('ISO-8859-1'))
-                    time.sleep(0.18)
+                    time.sleep(0.01)
                     print('sending data...')
                     i+=1
                 packets=False
@@ -95,9 +95,13 @@ def handle_client_connection(client_address,i):
                 handle_socket.send('END-FILE'.encode('ISO-8859-1'))
 
             print(str(i)+' packets send')
-            request = handle_socket.recv(args.buffsize)
-            print(request)
-            log_event(time.time()-start,'send-state: '+ request.decode('ISO-8859-1'))
+            ready = select.select([handle_socket], [], [], 2)
+            if ready[0]:
+                request = handle_socket.recv(args.buffsize)
+                print(request)
+                log_event(time.time()-start,'send-state: '+ request.decode('ISO-8859-1'))
+            else:
+                log_event(time.time()-start,'send-state: error')
 
     except Exception as err:
         print(err)
@@ -105,10 +109,6 @@ def handle_client_connection(client_address,i):
 while True:
     bytesAddressPair,address = UDPServerSocket.recvfrom(args.buffsize)
     print('Accepted connection from {}:{}'.format(address[0], address[1]))
-    print('address:')
-    print(address)
-    print('message')
-    print(bytesAddressPair)
 
     clients.append(address)
     if args.nclients == len(clients):
@@ -116,7 +116,6 @@ while True:
         for client_address in clients:
             client_handler = threading.Thread(
                 target=handle_client_connection,
-                args=(client_address,i,)  # without comma you'd get a... TypeError: handle_client_connection() argument after * must be a sequence, not _socketobject
-            )
+                args=(client_address,i,)
             client_handler.start()
             i+=1

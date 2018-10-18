@@ -1,10 +1,10 @@
 # coding=utf-8
-import socket , argparse, threading , hashlib , time
+import socket , argparse, threading , hashlib , time, select
 
 #Arguments for the client
 parser = argparse.ArgumentParser(description='UDP client')
 
-parser.add_argument('--host', type=str, default='192.168.56.1',
+parser.add_argument('--host', type=str, default='192.168.0.20',
                     help='hostname of the server to connect')
 
 parser.add_argument('--port', default=9000,
@@ -13,7 +13,7 @@ parser.add_argument('--port', default=9000,
 parser.add_argument('--buffsize', default=65536,
                     help='size of buffer for the client')
 
-parser.add_argument('--out', default='test_client_1.log',
+parser.add_argument('--out', default='test_25_client.log',
                     help='output file for the log')
 
 args = parser.parse_args()
@@ -35,7 +35,6 @@ def log_event(time, message):
 
 # create an ipv4 (AF_INET) socket object using the UDP protocol (SOCK_DGRAM)
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-client.bind(('',9000))
 try:
     client.sendto('connect'.encode(),(args.host,args.port))
     port = client.recv(args.buffsize)
@@ -43,22 +42,32 @@ try:
     client.connect((args.host,int(port)))
     client.send('ready-to-receive'.encode())
     print('ready-to-receive')
-    chunks= int(client.recv(args.buffsize).decode('ISO-8859-1'))
-    datahash = client.recv(args.buffsize).decode('ISO-8859-1')
+    chunks = 8568
+    ready = select.select([client], [], [], 5)
+    if ready[0]:
+        chunks= int(client.recv(args.buffsize).decode('ISO-8859-1'))
+    datahash = ' '
+    ready = select.select([client], [], [], 5)
+    if ready[0]:
+        datahash = client.recv(args.buffsize).decode('ISO-8859-1')
     start = time.time()
     packets=True
     data = ''
     i=0
     while packets:
-        request=client.recv(args.buffsize)
-        if 'END-FILE' not in request.decode('ISO-8859-1'):
-            i+=1
-            data+= request.decode('ISO-8859-1')
-            print('receiving data...'+str(i))
+        ready = select.select([client], [], [], 5)
+        if ready[0]:
+            request=client.recv(args.buffsize)
+            if 'END-FILE' not in request.decode('ISO-8859-1'):
+                i+=1
+                data+= request.decode('ISO-8859-1')
+                print('receiving data...'+str(i))
+            else:
+                packets=False
+                for x in range(10):
+                    print('END-MESSAGE')
         else:
-            packets=False
-            for x in range(10):
-                print('END-MESSAGE')
+            break
 
 
     print(str(i)+' packets recieved')
@@ -79,9 +88,12 @@ try:
 
     if datahash == hashData:
         client.send('ok'.encode('ISO-8859-1'))
-        log_event(time.time()-start,'send_state: ok, recieved succesfully. packets send= '+ str(chunks) + ' . packets received= '+ str(i))
+        log_event(time.time()-start,'send_state: ok, recieved succesfully. packets send=''
+                                                                    + str(chunks) + ' . packets received= '+ str(i))
     else:
         client.send('error'.encode('ISO-8859-1'))
-        log_event(time.time()-start,'send_state: error, Problems receiving the data. packets send= '+ str(chunks) + ' . packets received= '+ str(i))
+        log_event(time.time()-start,'send_state: error, Problems receiving the data. packets send= '
+                                                                    + str(chunks) + ' . packets received= '+ str(i))
+
 except Exception as err:
     print(err)

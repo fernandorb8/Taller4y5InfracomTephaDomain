@@ -63,8 +63,7 @@ def receiveVideo(client, start):
         b_recv = len(chunk) + b_recv
         print('{}%'.format((b_recv/len(fileContents)*100)))
     log_event(time.time()-start, 'Video received successfully, {} packages received'.format(b_recv))
-    client.send('OK'.encode())
-    return b''.join(chunks)
+    return [b''.join(chunks), hashlib.sha256(b''.join(chunks)).hexdigest().encode]
 
 # connect the client
 try:
@@ -79,25 +78,17 @@ try:
         client.send('ACK'.encode())
         #Start time
         start = time.time()
-        end = False
-        video = receiveVideo(client, start)
-        # while(not end):
-        #     video = client.recv(args.buffsize)
-        #     #print('Received {}'.format(video))
-        #     vhash = client.recv(args.buffsize)
-        #     #print('Received {}'.format(vhash))
-        #     hashVideo = hashlib.sha256(video).hexdigest().encode()
-        #     if vhash == hashVideo:
-        #         client.send('OK'.encode())
-        #         end = True
-        #         # Stop and print
-        #         log_event(time.time()-start, 'Video received successfully')
-        #     else:
-        #         client.send('ACK'.encode())
-        #         # Restart time and log problem
-        #         prev = start
-        #         start = time.time()
-        #         log_event(start-prev, 'Problem receiving the video, sending again...')
+        video, vhash = receiveVideo(client, start)
+        hashVideo = hashlib.sha256(video).hexdigest().encode()
+        if vhash == hashVideo:
+            client.send('OK'.encode())
+            log_event(time.time()-start, 'Video is correct')
+        else:
+            client.send('ACK'.encode())
+            # Restart time and log problem
+            prev = start
+            start = time.time()
+            log_event(start-prev, 'Problem receiving the video, sending again...')
         response = client.recv(args.buffsize)
         print(response)
         client.send('bye'.encode())
@@ -105,3 +96,4 @@ try:
         client.send('bye'.encode())
 except Exception as err:
     print(err)
+    log_event(time.time(), 'An error ocurred in the connection with the server')

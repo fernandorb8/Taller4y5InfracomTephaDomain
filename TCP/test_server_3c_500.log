@@ -1,0 +1,31 @@
+Sun Oct 14 19:04:34 2018Listening on :9000
+Buffsize 4096
+Number of clients: 3
+-----------------
+execution time: 1539561961.606157 s 
+Start sending video to client 0 
+----------------- 
+execution time: 1539561961.607834 s 
+Start sending video to client 2 
+----------------- 
+execution time: 1539561961.6080158 s 
+Start sending video to client 1 
+----------------- 
+execution time: 3460.597797870636 s 
+Video transferred successfully, 524288000 packages sent 
+----------------- 
+execution time: 3460.5999608039856 s 
+Video send successfully to client 0 
+----------------- 
+execution time: 3480.810375213623 s 
+Video transferred successfully, 524288000 packages sent 
+----------------- 
+execution time: 3480.8107221126556 s 
+Video send successfully to client 1 
+----------------- 
+execution time: 4698.100401878357 s 
+Video transferred successfully, 524288000 packages sent 
+----------------- 
+execution time: 4698.1028418540955 s 
+Video send successfully to client 2 
+----------------- 

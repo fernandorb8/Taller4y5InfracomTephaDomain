@@ -109,7 +109,7 @@ def handle_client_connection(client_socket, id):
                 print('Sending video ...')
                 # client_socket.send(video)
                 sendVideo(client_socket, start)
-                print('Sending hash ...')
+                # print('Sending hash ...')
                 # client_socket.send(hashVideo)
                 if request == b'OK':
                     # Stop time
@@ -136,7 +136,7 @@ while True:
         for client_sock in clients:
             client_handler = threading.Thread(
                 target=handle_client_connection,
-                args=(client_sock,i,)  # without comma you'd get a... TypeError: handle_client_connection() argument after * must be a sequence, not _socketobject
+                args=(client_sock,i,) 
             )
             client_handler.start()
             i = i + 1

@@ -1,0 +1,10 @@
+Sun Oct 14 18:09:41 2018
+Listening on 192.168.0.20:9000 
+buffsize 4096
+-----------------
+execution time: 3.797853946685791 s
+message: Video received successfully, 524288000 packages received 
+-----------------
+execution time: 10.14404010772705 s
+message: Problem receiving the video, sending again... 
+-----------------
